@@ -21,7 +21,6 @@
 9. Dodaj wiersz do tablicy z zadania 7 i sprawdź czy po modyfikacji skrypty w zadaniu 7 oraz 8 nadal działają poprawnie.
 10. Utwórz klasę reprezentującą wybrany element układu elektronicznego np. rezystor, kondensator, diodę.... Przetestuj działanie składowych klasy.
 11. Utwórz obiekt JSON przechowujący informacje o składowych atmosferycznych oraz innych danych w danym pomieszczeniu. Np. informacja o temperaturze, ciśśnieniu, czy światło jest zapalone, czas, itp.
-
 12. Utwórz `<div id='zad12'></div>`. Wykorzystaj javascript by zmienić zawartość znacznika div na "Hello World!". Zmień wielkość oraz kolor napisu wykorzystując javascript.
 13. Utwórz formularz w którym użytkownik będzie miał możliwość wpisania wagi w kilogramach oraz wzrostu w metrach. Stwórz skrypt który odczyta dane z formularza po wciśnięciu przysiku, obliczy wartość BMI i ustawi różne kolory tła w zależności o wynika.
 
