@@ -33,7 +33,29 @@ const var3 = 3.14;
 console.log(var1);
 document.write(var4);
 ```
-
+### Typy danych
+```javascript
+var var5;
+console.log(var5, typeof (var5));
+var5 = "ABC";
+console.log(var5, typeof (var5));
+var5 = 123;
+console.log(var5, typeof (var5));
+var5 = 1.99;
+console.log(var5, typeof (var5));
+var5 = true;
+console.log(var5, typeof (var5));
+var5 = [1, 2, 3, 4];
+console.log(var5, typeof (var5));
+var5 = { 'name': 'Jan', 'forname': 'Kowalski' };
+console.log(var5, typeof (var5));
+var5 = new Set();
+console.log(var5, typeof (var5));
+var5 = null;
+console.log(var5, typeof (var5));
+var5 = function () {return "Hello"}
+console.log(var5, typeof (var5));
+```
 
 ___
 1. Utwórz plik about_js.html. Utwórz nagłówek pierwszego stopnia z zawartością JavaScript. W paragrafach pod nagłowkiem umieść informacje:
