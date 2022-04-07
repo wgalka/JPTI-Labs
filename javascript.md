@@ -80,6 +80,13 @@ console.log(`!${t}`, !x);
 console.log(`${t} || ${f}`, t || f);
 console.log(`${t} == ${f}`, t && f);
 ```
+### Operator trujargumentowy
+Operator trujargumentowy to skrócona wersja zapisu instrukcji if ... else
+```javascript
+let a = 10
+
+a > 5? console.log("a > 5"):  console.log("a <= 5");
+```
 
 
 ___
