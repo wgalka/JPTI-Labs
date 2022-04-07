@@ -1,1 +1,2 @@
-My favorite search engine is [Duck Duck Go](/javascript.md).
+
+- [Lab005](/javascript.md).
