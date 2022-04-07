@@ -206,13 +206,28 @@ elementH2.innerHTML = "Zmodyfikowano zawartość"
 ```javascript
 elementH2.style.color = "#FF0000";
 ```
+
+
+### Obsługa zdarzeń
+```html
+<button id="btn">Przycisk</button>
+<script>
+    var button = document.getElementById('btn');
+    function myFunction(){
+        alert("Kliknięto przycisk");
+    }
+    button.addEventListener('click',myFunction);
+</script>
+```
 ___
 1. Utwórz plik about_js.html. Utwórz nagłówek pierwszego stopnia z zawartością JavaScript. W paragrafach pod nagłowkiem umieść informacje:
     - Co to JavaScript?
     - Do czego można wykorzystać Javascript?
     - Czym różni się deklarowanie zmiennych za pomocą `let` `var` `const`?
     - Wymień podstawowe typy danych języka JavaScript.
-    - 
+    - Czym różni się instrukcja break od continue?
+    - Jaka jest różnica pomiędzy `==` a `===` ?
+    - Co to funkcja anonimowa?
 2. W pliku about_js.html pod paragrafami utwórz nagłówek drugiego poziomu zawierający napis Zadanie 2. Pod nagłówkiem utwórz skrypt który wypisze w treści napis "Hello World!". Kolejne rozwiązania zadań twórz w podobny sposób.
 3. Utwórz zmienną `sentence` zawierającą napis "pies kot kura kaczka krowa koń". Wypisz zawartość zmiennej w treści strony.
 4. Utwórz stałą `e` zawierającą przybliżoną wartość liczby eulera.
