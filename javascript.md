@@ -56,6 +56,31 @@ console.log(var5, typeof (var5));
 var5 = function () {return "Hello"}
 console.log(var5, typeof (var5));
 ```
+### Operatory porównania
+```javascript
+let x = 12;
+let y = '12';
+
+console.log(`${x} == ${y}`, x == y);
+console.log(`${x} != ${y}`, x != y);
+console.log(`${x} > ${y}`, x > y);
+console.log(`${x} >= ${y}`, x >= y);
+console.log(`${x} < ${y}`, x < y);
+console.log(`${x} <= ${y}`, x <= y);
+console.log(`${x} === ${y}`, x === y);
+console.log(`${x} !== ${y}`, x !== y);
+```
+
+### Operatory logiczne
+```javascript
+ let t = true;
+let f = false;
+
+console.log(`!${t}`, !x);
+console.log(`${t} || ${f}`, t || f);
+console.log(`${t} == ${f}`, t && f);
+```
+
 
 ___
 1. Utwórz plik about_js.html. Utwórz nagłówek pierwszego stopnia z zawartością JavaScript. W paragrafach pod nagłowkiem umieść informacje:
