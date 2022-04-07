@@ -1,6 +1,38 @@
-
 #### Języki Programowania i Technologie Internetowe (JPiTI) <sub>2021-2022</sub>
 # JavaScript
+Skrypy Javascript na stronach umieszcza się wewnątrz znacznika `<script></script>`. Znacznik możemy umieścić w sekcji `<head>` lub `<body>`.
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    <body>
+        <script>
+            console.log("Hello World!");
+            document.write("Hello World!");
+        </script>
+    </body>
+</html>
+```
+Możliwe jest umieszczanie skryptów w osobnym pliku z rozszerzeniem `js`. Aby wczytać skrypt należy do znacnzika `<script>` dodać atrybut `src=`.
+```html
+<script src="urldopliku.js"></script>
+```
+
+### Deklaracja zmiennych
+```javascript
+let var1 = "ABC";
+var var2 = 123;
+const var3 = 3.14;
+```
+### Wypisywanie informacji w konsoli i w treści strony podczas wczytywania dokumentu
+```javascript
+ let var4 = "Hello World!";
+
+console.log(var1);
+document.write(var4);
+```
 
 
 ___
