@@ -1,4 +1,9 @@
 
+#### Języki Programowania i Technologie Internetowe (JPiTI) <sub>2021-2022</sub>
+# JavaScript
+
+
+___
 1. Utwórz plik about_js.html. Utwórz nagłówek pierwszego stopnia z zawartością JavaScript. W paragrafach pod nagłowkiem umieść informacje:
     - Co to JavaScript?
     - Do czego można wykorzystać Javascript?
