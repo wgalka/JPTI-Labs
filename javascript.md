@@ -88,6 +88,57 @@ let a = 10
 a > 5? console.log("a > 5"):  console.log("a <= 5");
 ```
 
+### Operatory arytmetyczne
+```javascript
+let num1 = 10;
+let num2 = 2;
+
+console.log(`${num1} + ${num2} = `,num1 + num2);
+console.log(`${num1} - ${num2} = `,num1 - num2);
+console.log(`${num1} * ${num2} = `,num1 * num2);
+console.log(`${num1} / ${num2} = `,num1 / num2);
+console.log(`${num1} ** ${num2} = `,num1 ** num2);
+console.log(`${num1} % ${num2} = `,num1 % num2);
+```
+
+### if ... else
+```javascript
+const input = prompt("Wpisz wartość:");
+
+if(input > 10){
+    console.log("input > 10")
+} else{
+    console.log("input <= 10")
+}
+```
+
+### for
+```javascript
+for(let i = 0; i<10;i++){
+    console.log('Iteracja:', i)
+}
+```
+### for in
+```javascript
+let words = ["apple", 'banana', 'kiwi', 'mango']
+for (let i in words) {
+    console.log('Iteracja:', i)
+}
+```
+### while
+```javascript
+while (i!= 'q'){
+    var i = prompt("Wpisz q by okno przestało się pojawiać:");
+}
+```
+### do while
+```javascript
+do{
+    var i = prompt("Wpisz z by okno przestało się pojawiać:");
+} while(i != 'z')
+```
+
+
 
 ___
 1. Utwórz plik about_js.html. Utwórz nagłówek pierwszego stopnia z zawartością JavaScript. W paragrafach pod nagłowkiem umieść informacje:
