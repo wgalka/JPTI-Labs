@@ -1,10 +1,8 @@
 # JPTI
 ___
-- <a href="/javascript.md" style="color: #FFAA00; text-decoration: underline;text-decoration-style: dotted;">LAB005</a>
-
-- [Lab005](/javascript.md)
-- [Lab006](/node.md)
-- [Lab007](/nodeMVC.md)
-- [Lab008](/nodeREST.md)
-- [Lab009](/MongoDB.md)
+- <a href="/javascript.md" style="color: #FFAA00;">LAB005</a>
+- <a href="/node.md" style="color: #FFAA00;">LAB006</a>
+- <a href="/nodeMVC.md" style="color: #FFAA00;">LAB007</a>
+- <a href="/nodeREST.md" style="color: #FFAA00;">LAB008</a>
+- <a href="/MongoDB.md" style="color: #FFAA00;">LAB009</a>
 
