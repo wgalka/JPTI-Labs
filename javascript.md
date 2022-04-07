@@ -138,8 +138,74 @@ do{
 } while(i != 'z')
 ```
 
+### funckje
+```javascript
+function multiplication(a, b) {
+    return a * b;
+}
 
+// Funkcja anonimowa to funkcja bez identyfikatora w postaci nazwy
+let multiplication = function (a, b) {
+    return a * b;
+}
 
+// Notacja strzałkowa (Arrow function expression)
+let multiplication = (a,b)=> {return a*b};
+```
+### klasy
+```javascript
+class Bulb{
+    // pole prywatne
+    #manufacturer;
+    #light = false;
+    constructor(lumens, power, manufacturer){
+        this.lumens = lumens;
+        this.power = power;
+        this.#manufacturer = manufacturer;
+    }
+
+    // getter
+    get getmanufacturer(){
+        return this.#manufacturer;
+    }
+
+    // setter
+    set setManufacturer(name){
+        this.#manufacturer = name;
+    }
+
+    // Metoda
+    isOn(){
+        return this.#light;
+    }
+
+    powerOn(){
+        this.#light = true;
+    }
+}
+```
+Więcej na temat klas: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
+### Dostęp i modyfikacja elementów DOM
+```javascript
+<h2 id="test">Dostęp i modyfikacja</h2>
+<script>
+    let elementH2 = document.getElementById("test");
+</script>
+```
+#### Wypisanie wartości obiektu DOM
+```javascript
+console.log(elementH2.innerHTML);
+```
+Wybrane metody wyszukujące pożądane obiekty: `getElementById()` `getElementsByClassName()` `getElementsByTagName()` `getElementsByName()`
+#### Modyfikacja zawartości znacnzika
+```javascript
+elementH2.innerHTML = "Zmodyfikowano zawartość"
+```
+#### Modyfikacja styli elementu
+```javascript
+elementH2.style.color = "#FF0000";
+```
 ___
 1. Utwórz plik about_js.html. Utwórz nagłówek pierwszego stopnia z zawartością JavaScript. W paragrafach pod nagłowkiem umieść informacje:
     - Co to JavaScript?
