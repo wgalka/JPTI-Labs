@@ -246,11 +246,11 @@ ___
 6. Utwórz pętlę która wypisze w treści strony kolejne potęgi liczby 2 oddzielone `/` do wartości 4085.
 7. Utwórz tablicę dwuwymiarową przechowującą następujące dane znajdujące się w poniższej tabeli. Wypisz dane w konsoli Javascript. Następnie wypisz w treści strony na podstawie danych zdania "Temperatura w [nazwa pomieszczenia] wynosi [temperatura] &ordm; C"
     <style>
-        custom{
+        .custom{
             border: 3px solid white;
             border-collapse: collapse;
         }
-        custom > td{
+        .custom > td{
             border: 3px solid white;
             border-collapse: collapse;
         }
