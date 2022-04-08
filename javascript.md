@@ -73,10 +73,10 @@ console.log(`${x} !== ${y}`, x !== y);
 
 ### Operatory logiczne
 ```javascript
- let t = true;
+let t = true;
 let f = false;
 
-console.log(`!${t}`, !x);
+console.log(`!${t}`, !t);
 console.log(`${t} || ${f}`, t || f);
 console.log(`${t} == ${f}`, t && f);
 ```
@@ -99,6 +99,16 @@ console.log(`${num1} * ${num2} = `,num1 * num2);
 console.log(`${num1} / ${num2} = `,num1 / num2);
 console.log(`${num1} ** ${num2} = `,num1 ** num2);
 console.log(`${num1} % ${num2} = `,num1 % num2);
+```
+
+### Tablice
+```javascript
+let tab = ['apple', 'banana', ["smoczy", "owoc"]];
+
+console.log(tab[0]);
+console.log(tab[2]);
+
+console.log(tab[2][1]);
 ```
 
 ### if ... else
