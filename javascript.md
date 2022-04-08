@@ -255,6 +255,9 @@ ___
             border: 1px solid rgb(255,255,255,200);
             border-collapse: collapse;
         }
+        .btn-github{
+            display: none;
+        }
     </style>
     <table class="custom">
     <thead>
