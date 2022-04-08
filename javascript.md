@@ -1,3 +1,13 @@
+<style>
+        .custom{
+            border: 3px solid white;
+            border-collapse: collapse;
+        }
+        .custom > td{
+            border: 3px solid white;
+            border-collapse: collapse;
+        }
+</style>
 #### Języki Programowania i Technologie Internetowe (JPiTI) <sub>2021-2022</sub>
 # JavaScript
 Skrypy Javascript na stronach umieszcza się wewnątrz znacznika `<script></script>`. Znacznik możemy umieścić w sekcji `<head>` lub `<body>`.
@@ -245,16 +255,7 @@ ___
 5. Utwórz zmienną var1 przechowującą wartość 1000 oraz zmienną var2 przechowującą wartość "1000". Porównaj zmienna operatorem == oraz === wynik porównania wypisz w treści strony.
 6. Utwórz pętlę która wypisze w treści strony kolejne potęgi liczby 2 oddzielone `/` do wartości 4085.
 7. Utwórz tablicę dwuwymiarową przechowującą następujące dane znajdujące się w poniższej tabeli. Wypisz dane w konsoli Javascript. Następnie wypisz w treści strony na podstawie danych zdania "Temperatura w [nazwa pomieszczenia] wynosi [temperatura] &ordm; C"
-    <style>
-        .custom{
-            border: 3px solid white;
-            border-collapse: collapse;
-        }
-        .custom > td{
-            border: 3px solid white;
-            border-collapse: collapse;
-        }
-    </style>
+    
     <table class="custom">
     <thead>
     </thead>
