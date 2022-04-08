@@ -247,16 +247,13 @@ ___
 7. Utwórz tablicę dwuwymiarową przechowującą następujące dane znajdujące się w poniższej tabeli. Wypisz dane w konsoli Javascript. Następnie wypisz w treści strony na podstawie danych zdania "Temperatura w [nazwa pomieszczenia] wynosi [temperatura] &ordm; C"
     <style>
         .custom{
-            border: 1px solid rgb(255,255,255,200);
+            border: 1px solid rgb(255,255,255,150);
             border-collapse: collapse;
             background-color: black;
         }
         .custom td{
-            border: 1px solid rgb(255,255,255,200);
+            border: 1px solid rgb(255,255,255,150);
             border-collapse: collapse;
-        }
-        .btn-github{
-            display: none;
         }
     </style>
     <table class="custom">
