@@ -246,6 +246,9 @@ ___
 6. Utwórz pętlę która wypisze w treści strony kolejne potęgi liczby 2 oddzielone `/` do wartości 4085.
 7. Utwórz tablicę dwuwymiarową przechowującą następujące dane znajdujące się w poniższej tabeli. Wypisz dane w konsoli Javascript. Następnie wypisz w treści strony na podstawie danych zdania "Temperatura w [nazwa pomieszczenia] wynosi [temperatura] &ordm; C"
     <table>
+    <thead>
+    </thead>
+    <tbody>
     <tr>
         <td> 1 </td>
         <td> Kuchnia </td>
@@ -261,6 +264,7 @@ ___
         <td> Pokój 1 </td>
         <td> 27 </td>
     </tr>
+    </tbody>
     </table>
 8. Utwórz funkcję `ctf()` która zamienia stopnie celecjusz na stopnie farenheita. °F = (°C × 9/5) + 32 Wykorzystaj funkcję by zamienić temperaturę w tablicy z poprzedniego zadania. Nastepnie wypisz w treści strony na podstawie danych zdania "Temperatura w [nazwa pomieszczenia] wynosi [temperatura] &ordm; F"
 9. Dodaj wiersz do tablicy z zadania 7 i sprawdź czy po modyfikacji skrypty w zadaniu 7 oraz 8 nadal działają poprawnie.
