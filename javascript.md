@@ -193,6 +193,13 @@ class Bulb{
         this.#light = true;
     }
 }
+
+
+// Utworzenie obiektu danej klasy
+let obj = new Bulb(1607,230,"Phil");
+
+// Wywołanie funkcji na obiekcie
+obj.powerOn();
 ```
 Więcej na temat klas: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 
