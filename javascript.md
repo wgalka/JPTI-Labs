@@ -245,12 +245,23 @@ ___
 5. Utwórz zmienną var1 przechowującą wartość 1000 oraz zmienną var2 przechowującą wartość "1000". Porównaj zmienna operatorem == oraz === wynik porównania wypisz w treści strony.
 6. Utwórz pętlę która wypisze w treści strony kolejne potęgi liczby 2 oddzielone `/` do wartości 4085.
 7. Utwórz tablicę dwuwymiarową przechowującą następujące dane znajdujące się w poniższej tabeli. Wypisz dane w konsoli Javascript. Następnie wypisz w treści strony na podstawie danych zdania "Temperatura w [nazwa pomieszczenia] wynosi [temperatura] &ordm; C"
-
-    | 1 | Kuchnia | 24 |
-    |---|---------|----|
-    | 2 | Salon   | 20 |
-    | 3 | Pokój 1 | 27 |
-
+    <table>
+    <tr>
+        <td> 1 </td>
+        <td> Kuchnia </td>
+        <td> 24 </td>
+    </tr>
+    <tr>
+        <td> 2 </td>
+        <td> Salon </td>
+        <td> 20 </td>
+    </tr>
+    <tr>
+        <td> 3 </td>
+        <td> Pokój 1 </td>
+        <td> 27 </td>
+    </tr>
+    </table>
 8. Utwórz funkcję `ctf()` która zamienia stopnie celecjusz na stopnie farenheita. °F = (°C × 9/5) + 32 Wykorzystaj funkcję by zamienić temperaturę w tablicy z poprzedniego zadania. Nastepnie wypisz w treści strony na podstawie danych zdania "Temperatura w [nazwa pomieszczenia] wynosi [temperatura] &ordm; F"
 9. Dodaj wiersz do tablicy z zadania 7 i sprawdź czy po modyfikacji skrypty w zadaniu 7 oraz 8 nadal działają poprawnie.
 10. Utwórz klasę reprezentującą wybrany element układu elektronicznego np. rezystor, kondensator, diodę.... Przetestuj działanie składowych klasy.
