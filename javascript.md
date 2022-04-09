@@ -70,6 +70,7 @@ console.log(`${x} <= ${y}`, x <= y);
 console.log(`${x} === ${y}`, x === y);
 console.log(`${x} !== ${y}`, x !== y);
 ```
+Nieoczekiwane rezultaty porównań w Javascript z wyjaśnieniem: https://github.com/denysdovhan/wtfjs/blob/master/README-pl-pl.md
 
 ### Operatory logiczne
 ```javascript
