@@ -205,7 +205,7 @@ obj.powerOn();
 Więcej na temat klas: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 
 ### Dostęp i modyfikacja elementów DOM
-```javascript
+```html
 <h2 id="test">Dostęp i modyfikacja</h2>
 <script>
     let elementH2 = document.getElementById("test");
