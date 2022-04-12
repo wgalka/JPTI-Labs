@@ -23,6 +23,9 @@ By aktywować konkretną wersję node.js należy użyć polecenia `nvm use nr_we
 Po aktywacji konkretnej wersji aby sprawdzić czy jest ona aktywna użyj polecenia `node`:
 ![image](https://user-images.githubusercontent.com/37069490/163044765-66bb4f86-1a44-40c1-a43e-8fb3cc89af5c.png)
 
+## NPM - Node package manager
 
 
 https://nodejs.org/en/
+
+![image](https://i.redd.it/n08d5h8v4id21.jpg)
