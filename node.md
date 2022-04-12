@@ -23,9 +23,23 @@ By aktywować konkretną wersję node.js należy użyć polecenia `nvm use nr_we
 Po aktywacji konkretnej wersji aby sprawdzić czy jest ona aktywna użyj polecenia `node`:
 ![image](https://user-images.githubusercontent.com/37069490/163044765-66bb4f86-1a44-40c1-a43e-8fb3cc89af5c.png)
 
+## Node.js
+
+Zamiast korzystać z narzędzia nvm node.js można pograć i zainstalować bezpośrednio ze strony 
+https://nodejs.org/en/.
+
 ## NPM - Node package manager
+npm to powszechnie wykorzystywany menedżer pakietów Node (za jego pomocą zainstalujemy np pakiet
+Express). npm nie jest akronimem (dlatego nazwy tej nie zapisuje się wielkimi literami) jak nazwy
+PHP, GNU, WINE i inne;
+Ogólnie rzecz biorąc, menedżer pakietów służy do instalowania pakietów i zarządzania zależnościami.
+
+!Dostępny jest też konkurencyjny popularny menedżer pakietów o nazwie Yarn,
+wykorzystujący tę samą bazę danych pakietów, z której korzysta npm.
+
+**npm jest instalowany wraz z Node.**
 
 
-https://nodejs.org/en/
+
 
 ![image](https://i.redd.it/n08d5h8v4id21.jpg)
