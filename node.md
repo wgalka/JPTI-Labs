@@ -72,8 +72,8 @@ var server = http.createServer(function (req, res) {
     res.write('Hello World!'); // Treść odpowiedzi HTTP
     res.end();
 })
-
-server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!(Ctrl+C - exit)") }) // 'Słuchacz' oczekujący na żądania HTTP
+// 'Słuchacz' oczekujący na żądania HTTP
+server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!(Ctrl+C - exit)") }) 
 ```
 
 
