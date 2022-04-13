@@ -115,7 +115,7 @@ Brak opcji `default` spowoduje przerwanie działania aplikacji w przypadku wysł
 ### Odczytanie dokumentu html i zwrócenie jako odpowiedź serwera
 
 W poniższym przykładzie ukorzystując moduł [fs(File System)](https://nodejs.org/api/fs.html) z folderu *static* zostaje odczytany dokument *index.html*.
-Funkcja [`readFile()`](https://nodejs.org/api/fs.html#fsreadfilepath-options-callback)
+Funkcja [`readFile()`](https://nodejs.org/api/fs.html#:~:text=fs.Dirent%3E%20objects.-,fs.readFile(path%5B%2C%20options%5D%2C%20callback),-%23) może przyjąć jako argumenty *path* - URL w postaci łańcucha znaków do pliku, *callback* - funkcja przyjmująca dwa parametry *err* i *data* która zostanie wywołana po zakończeniu odczytu pliku lub w wypadku wystąpienia błędu związanego z odczytem pliku.
 
 ```javascript
 var http = require('http') // import modułu HTTP
@@ -149,8 +149,27 @@ var server = http.createServer(function (req, res) {
 // 'Słuchacz' oczekujący na żądania HTTP
 server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!(Ctrl+C - exit)") }) 
 ```
+Przykładowa zawartość pliku *index.html*
+```html
+<!DOCTYPE html>
+<html lang="pl">
 
+<head>
+    <title>Routing główny</title>
+    <meta charset="UTF-8">
+</head>
 
+<body>
+    <h1>Strona główna</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis sollicitudin mi. Curabitur mattis
+        pellentesque sapien non suscipit. Fusce sapien purus, commodo lacinia finibus non, placerat id justo. Nam at
+        laoreet lacus, et suscipit lacus. Morbi porta consectetur est eu porttitor. Suspendisse a lorem eu sem commodo
+        ornare at ac diam. Sed dignissim malesuada dignissim. Nam pellentesque nibh convallis libero laoreet, ac feugiat
+        nunc pellentesque.</p>
+</body>
+
+</html>
+```
 
 
 1. Utwórz skrypt pytajacy użytkownika o wagę w kg oraz wzrost w metrach. Na podstawie danych oblicz wskaźnik bmi i wypisz informacje w konsoli.
