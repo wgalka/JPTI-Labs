@@ -112,7 +112,10 @@ Powyższy przykład obsługuje 3 adresy URL:
 
 Brak opcji `default` spowoduje przerwanie działania aplikacji w przypadku wysłania nieprawidłowego żądania HTTP
 
-### Odczytanie dokumentu html i zwrócenie jako odpowiedź
+### Odczytanie dokumentu html i zwrócenie jako odpowiedź serwera
+
+W poniższym przykładzie ukorzystując moduł [fs(File System)](https://nodejs.org/api/fs.html) z folderu *static* zostaje odczytany dokument *index.html*.
+Funkcja [`readFile()`](https://nodejs.org/api/fs.html#fsreadfilepath-options-callback)
 
 ```javascript
 var http = require('http') // import modułu HTTP
