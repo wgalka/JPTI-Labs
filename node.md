@@ -63,4 +63,22 @@ var imie = prompt("Podaj imię:")
 console.log(`Hello ${imie}!`)
 ```
 
+### Tworzenie serwera
+```javascript
+import http from 'http'; // import modułu HTTp
+
+var server = http.createServer(function (req, res) {
+    res.writeHead(200, { 'Content-Type': 'text/plain' }); // Utworzenie nagłówka HTTP
+    res.write('Hello World!'); // Treść odpowiedzi HTTP
+    res.end();
+})
+
+server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!") }) // 'Słuchacz' oczekujący na żądania HTTP
+```
+
+
+
+1. Utwórz skrypt pytajacy użytkownika o wagę w kg oraz wzrost w metrach. Na podstawie danych oblicz wskaźnik bmi i wypisz informacje w konsoli.
+
+
 ![image](https://i.redd.it/n08d5h8v4id21.jpg)
