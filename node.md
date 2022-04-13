@@ -117,6 +117,9 @@ Brak opcji `default` spowoduje przerwanie działania aplikacji w przypadku wysł
 W poniższym przykładzie ukorzystując moduł [fs(File System)](https://nodejs.org/api/fs.html) z folderu *static* zostaje odczytany dokument *index.html*.
 Funkcja [`readFile()`](https://nodejs.org/api/fs.html#:~:text=fs.Dirent%3E%20objects.-,fs.readFile(path%5B%2C%20options%5D%2C%20callback),-%23) może przyjąć jako argumenty *path* - URL w postaci łańcucha znaków do pliku, *callback* - funkcja przyjmująca dwa parametry *err* i *data* która zostanie wywołana po zakończeniu odczytu pliku lub w wypadku wystąpienia błędu związanego z odczytem pliku.
 
+Ważnym elementem jest też prawidłowa definicja *Content-Type* w nagłówku HTTP.
+Wszystkie opcje znajdują się na tej stornie [Link](https://www.geeksforgeeks.org/http-headers-content-type/#:~:text=All%20possible%20values%20of%20HTTP%20Content%2Dtype%20header%3A)
+
 ```javascript
 var http = require('http') // import modułu HTTP
 var fs = require('fs') // import modułu fs
