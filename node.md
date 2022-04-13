@@ -75,7 +75,11 @@ var server = http.createServer(function (req, res) {
 // 'Słuchacz' oczekujący na żądania HTTP
 server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!(Ctrl+C - exit)") }) 
 ```
+### Trasowanie - przetwarzanie żądań http
 
+```javascript
+
+```
 
 
 
