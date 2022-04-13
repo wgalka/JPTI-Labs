@@ -28,7 +28,7 @@ Po aktywacji konkretnej wersji aby sprawdzić czy jest ona aktywna użyj polecen
 Zamiast korzystać z narzędzia nvm node.js można pograć i zainstalować bezpośrednio ze strony 
 https://nodejs.org/en/.
 
-## NPM - Node package manager
+### NPM - Node package manager
 npm to powszechnie wykorzystywany menedżer pakietów Node (za jego pomocą zainstalujemy np pakiet
 Express). npm nie jest akronimem (dlatego nazwy tej nie zapisuje się wielkimi literami) jak nazwy
 PHP, GNU, WINE i inne;
@@ -39,7 +39,28 @@ wykorzystujący tę samą bazę danych pakietów, z której korzysta npm.
 
 **npm jest instalowany wraz z Node.**
 
+Do instalacji pkietów służy polecenie `npm install -g nazwa_pakietu` np:
+![image](https://user-images.githubusercontent.com/37069490/163167221-c594de5b-6041-43e2-b7f7-6424ad313f3f.png)
+opcja -g wskazuje że pakiet powinien być zainstalowany globalnie. Użycie polecenia bez tej opcji utworzy folder node_modules w folderze w którym zostało wywołane polecenie.
 
+### Konsola Node
+Konsolę node można wywołać poleceniem `node` i używać jako kalkulatora lub pisać skrypt linia po linii:
+![image](https://user-images.githubusercontent.com/37069490/163172542-10ac9d96-da97-4fee-b3b0-32ec382e6cc3.png)
 
+By zapisać skrypt w konsoli należy wpisać `.save nazwa_skryptu.js` skrypt zostanie zapisany w folderze w którym została uruchomiona konsola:
+![image](https://user-images.githubusercontent.com/37069490/163173429-89229173-8bfd-48bd-bde5-16fe3eb57b3c.png)
+
+By załadować skrypt służy polecenie `.load URL_do_skryptu.js`:
+![image](https://user-images.githubusercontent.com/37069490/163173862-20b2ca14-9e3f-42ae-a90f-e559bfb586ae.png)
+
+### Uruchamianie skryptów bez konsoli:
+By uruchomić skrypt zapisany w pliku można użyć polecenia `node nazwa_skryptu.js`:
+
+_hello.js_
+```javascript
+const prompt = require('prompt-sync')({sigint: true}); // Wymaga modułu prompt-sync. 
+var imie = prompt("Podaj imię:")
+console.log(`Hello ${imie}!`)
+```
 
 ![image](https://i.redd.it/n08d5h8v4id21.jpg)
