@@ -100,8 +100,8 @@ var server = http.createServer(function (req, res) {
             break
     }
 })
-
-server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!(Ctrl+C - exit)") }) // 'Słuchacz' oczekujący na żądania HTTP
+// 'Słuchacz' oczekujący na żądania HTTP
+server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!(Ctrl+C - exit)") }) 
 ```
 Powyższy przykład obsługuje 3 adresy URL:
 | URL | case |
@@ -112,12 +112,44 @@ Powyższy przykład obsługuje 3 adresy URL:
 
 Brak opcji `default` spowoduje przerwanie działania aplikacji w przypadku wysłania nieprawidłowego żądania HTTP
 
+### Odczytanie dokumentu html i zwrócenie jako odpowiedź
 
+```javascript
+var http = require('http') // import modułu HTTP
+var fs = require('fs') // import modułu fs
+
+var server = http.createServer(function (req, res) {
+    const path = req.url // Odczytanie adresu URL żądania HTTP
+    console.log("HTTP REQUEST: ", path)
+    switch (path) {
+        case '/':
+            fs.readFile("static/index.html", (e, data)=>{
+                if(e){ // jeśli wystąpi wyjątek zwrócimy odpowiedni komunikat
+                    res.writeHead(500, { 'Content-Type': 'text/plain'})
+                    res.end("Internal Server Error: "+e)
+                }else{ // jeśli odczyt będzie prawidłowy zwracamy odczytany dokument
+                    res.writeHead(200, { 'Content-Type': 'text/html'})
+                    res.end(data)
+                }
+            })
+            break
+        case '/hello':
+            res.writeHead(200, { 'Content-Type': 'text/plain' })
+            res.end('Hello World!')
+            break
+        default:
+            res.writeHead(404, { 'Content-Type': 'text/plain' })
+            res.end('ERROR 404 - Not Found')
+            break
+    }
+})
+// 'Słuchacz' oczekujący na żądania HTTP
+server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!(Ctrl+C - exit)") }) 
+```
 
 
 
 
 1. Utwórz skrypt pytajacy użytkownika o wagę w kg oraz wzrost w metrach. Na podstawie danych oblicz wskaźnik bmi i wypisz informacje w konsoli.
-
 
 ![image](https://i.redd.it/n08d5h8v4id21.jpg)
