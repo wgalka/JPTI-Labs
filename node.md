@@ -65,7 +65,7 @@ console.log(`Hello ${imie}!`)
 
 ### Tworzenie serwera
 ```javascript
-import http from 'http'; // import modułu HTTp
+var http = require('http'); // import modułu HTTp
 
 var server = http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' }); // Utworzenie nagłówka HTTP
@@ -73,8 +73,9 @@ var server = http.createServer(function (req, res) {
     res.end();
 })
 
-server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!") }) // 'Słuchacz' oczekujący na żądania HTTP
+server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!(Ctrl+C - exit)") }) // 'Słuchacz' oczekujący na żądania HTTP
 ```
+
 
 
 
