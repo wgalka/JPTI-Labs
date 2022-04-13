@@ -75,11 +75,45 @@ var server = http.createServer(function (req, res) {
 // 'Słuchacz' oczekujący na żądania HTTP
 server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!(Ctrl+C - exit)") }) 
 ```
+Skrypt uruchomi lokalny serwer pod adresem 127.0.0.1:800. Wpisując ten adres w przeglądarce zostanie uruchomiona funkcja createServer która zwróci napis Hello World!.
+
 ### Trasowanie - przetwarzanie żądań http
 
 ```javascript
+var http = require('http'); // import modułu HTTP
 
+var server = http.createServer(function (req, res) {
+    const path = req.url // Odczytanie adresu URL żądania HTTP
+    console.log("HTTP REQUEST: ", path)
+    switch (path) {
+        case '':
+            res.writeHead(200, { 'Content-Type': 'text/plain' })
+            res.end('Index.html')
+            break
+        case '/hello':
+            res.writeHead(200, { 'Content-Type': 'text/plain' })
+            res.end('Hello World!')
+            break
+        default:
+            res.writeHead(404, { 'Content-Type': 'text/plain' })
+            res.end('ERROR 404 - Not Found')
+            break
+    }
+})
+
+server.listen(8000, "127.0.0.1", () => { console.log("Uruchomiono serwer!(Ctrl+C - exit)") }) // 'Słuchacz' oczekujący na żądania HTTP
 ```
+Powyższy przykład obsługuje 3 adresy URL:
+| URL | case |
+|---|---|
+| http://127.0.0.1:8000/ | case '': |
+| http://127.0.0.1:8000/hello | case '/hello': |
+| Wszystkie inne żądania | default: |
+
+Brak opcji `default` spowoduje przerwanie działania aplikacji w przypadku wysłania nieprawidłowego żądania HTTP
+
+
+
 
 
 
