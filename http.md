@@ -1,5 +1,7 @@
 # Protokół HTTP
 
+## Budowa adresu URL
+
 
 przykładowy HTTP request
 ```http
