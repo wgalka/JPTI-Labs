@@ -119,7 +119,7 @@ Route::get('/user/{nickname}/post/{post}', function ($nickname, $post) {
 ```url
 https://127.0.0.1:8080/hello?name=Jan&forname=John
 ```
-W laravelu dostęp do `query parameters` można uzyskać używając obiektu Request w funkcji podawanej jako `$callback`. W poniższym przykładzie żądanie zwraca wartość parametru name zefiniowanego w `query parameters`.
+W laravelu dostęp do `query parameters` można uzyskać używając obiektu Request w funkcji podawanej jako `$callback`. W poniższym przykładzie żądanie zwraca wartość parametru name zefiniowanego w `query parameters`. Jeśli nie da się odczytać tej wartośći zostanie zwrócony łąńcych znaków "No query parameters".
 ```php
 Route::get('/user', function (Request $request) {
     try {
