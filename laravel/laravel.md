@@ -14,8 +14,20 @@ php artisan serve --host=127.0.0.1 --port=8080
 ```
 ! Wywołując polecenie należy zwrócić uwagę czy jest wywoływane w głównym folderze projektu(w folderze w którym znajduje się plik artisan )
 
+## Trasowanie
 
+```
+📦routes
+ ┣ 📜api.php
+ ┣ 📜channels.php
+ ┣ 📜console.php
+ ┗ 📜web.php
+```
 
+**api.php**
+**channels.php**
+**console.php**
+**web.php**
 
 Routing directory:
 -
