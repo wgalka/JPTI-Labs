@@ -129,7 +129,7 @@ Route::get('/user', function (Request $request) {
     }
 });
 ```
-Najważniejsze metody obiektu `Request`:
+**Najważniejsze metody obiektu `Request`:**
 
 Pobranie wartości wybranego parametru w `query parameters`. Metoda może przyjmować dwa parametry. Jeśli wartość pod daną nazwą nie zostanie odnaleziona wtedy funkcja zwórci wartość drugiego parametry funkcji(w tym przypadku 'Jan')
 ```php
