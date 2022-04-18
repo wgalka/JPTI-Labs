@@ -190,7 +190,68 @@ Przekierowanie sterowania do kontrolera zostało pokazane w punkcie *Co podać j
 Route::get('/hello', [MyTestController::class, 'hello']);
 ```
 
+## Zwracanie treści(renderowanie widoku)
 
+Widoki znajdują się w lokalizacji `resources/views`
+```
+📦resources
+ ┗ 📂views
+   ┗ 📜welcome.blade.php
+ ```
+
+### Renderowanie widoku za pomocą silnika szablonów blade
+
+Do generowania odpowiedzi z szablonu służy metoda `view()`:
+```php
+Route::get('/hello', function (Request $request) {
+    return view('welcome');
+});
+```
+
+Umieszczając widoki w zagnieżdzonych folderach np:
+```
+📦resources
+ ┗ 📂views
+   ┗ 📂myfolder
+     ┗ 📜welcome.blade.php
+ ```
+ Ścieżkę do pliku zdefiniujemy w następujący sposób `mysolder.welcome`:
+ ```php
+Route::get('/hello', function (Request $request) {
+    return view('myfolder.welcome');
+});
+```
+**Przekazywanie danych do widoku**
+
+Funkcja `view($view, $data)` jako drugi argument przyjmuje tablicę zawierającą wartości które chcemy przekazać:
+ ```php
+Route::get('/hello', function (Request $request) {
+    $tab = ['apple','onion','pear']
+    return view('myfolder.welcome', ['name' => 'Jan', 'fruits' => $tab]);
+});
+```
+Przykładowy sazblon `welcome.blade.php` przetwarzający przesłane dane:
+```blade
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <h1>Hello {{ $name }}!</h1>
+
+    <ul>
+        @foreach ($fruits as $fruit)
+            <li>{{ $fruit }}</li>
+        @endforeach
+    </ul>
+</body>
+
+</html>
+```
 
 1. Co to `named parameters`?
 2. Co to `query parameters`?
