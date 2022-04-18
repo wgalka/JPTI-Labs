@@ -180,7 +180,7 @@ class MyTestController extends Controller
 {
     function hello(Request $request)
     {
-        return "Hello World!"
+        return "Hello World!";
     }
 }
 ```
