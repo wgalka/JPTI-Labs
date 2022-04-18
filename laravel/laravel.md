@@ -131,6 +131,31 @@ Route::get('/user', function (Request $request) {
 ```
 Najważniejsze metody obiektu `Request`:
 
+Pobranie wartości wybranego parametru w `query parameters`. Metoda może przyjmować dwa parametry. Jeśli wartość pod daną nazwą nie zostanie odnaleziona wtedy funkcja zwórci wartość drugiego parametry funkcji(w tym przypadku 'Jan')
+```php
+$data = $request->query('name', 'Jan');
+```
+Pobranie wszystykich danych przesłanych w żądaniu w formie tablicy
+```php
+$data = $request->all();
+```
+Sprawdzenie czy obiekt zawiera element o danym kluczu:
+```php
+$ispresent = $request->has('name');
+```
+Ścieżka do zasobu(bez adresu domeny i portu)
+```php
+$url = $request->path();
+```
+Ścieżka bez query parameters:
+```php
+$url = $request->url();
+```
+Pełny adres URL żądania
+```php
+$url = $request->fullUrl();
+```
+
 
 1. Co to `named parameters`?
 2. Co to `query parameters`?
