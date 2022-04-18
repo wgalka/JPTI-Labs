@@ -257,3 +257,7 @@ Przykładowy sazblon `welcome.blade.php` przetwarzający przesłane dane:
 2. Co to `query parameters`?
 3. Co to funkcja anonimowa?
 4. Jakie metody HTTP odpowiadają operacjom CRUD?
+5. W jakich lokalicacjach w projekcie laravel przechowujemy:
+    - widoki
+    - kontrolery
+    - trasowanie
