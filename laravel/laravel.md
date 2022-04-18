@@ -185,9 +185,10 @@ class MyTestController extends Controller
 }
 ```
 Przekierowanie sterowania do kontrolera zostało pokazane w punkcie *Co podać jako `$callback`?*. Przykładowe wywołanie metody hello z powyższego kontrolera w pliku `web.php`:
+
 ```php
 Route::get('/hello', [MyTestController::class, 'hello']);
-``
+```
 
 
 
