@@ -113,8 +113,26 @@ Route::get('/user/{nickname}/post/{post}', function ($nickname, $post) {
 });
 ```
 
-**
+**Jak przetwarzać `query parameters`?**
+
+`query parameters` są to dane przesyłane w URL żądania HTTP po znaku `?` w postaci `nazwa=wartość`:
+```url
+https://127.0.0.1:8080/hello?name=Jan&forname=John
+```
+W laravelu dostęp do `query parameters` można uzyskać używając obiektu Request w funkcji podawanej jako `$callback`. W poniższym przykładzie żądanie zwraca wartość parametru name zefiniowanego w `query parameters`.
+```php
+Route::get('/user', function (Request $request) {
+    try {
+        return $request->query('name');
+    } catch (Exception $e) {
+        return "No query parameters";
+    }
+});
+```
+Najważniejsze metody obiektu `Request`:
+
 
 1. Co to `named parameters`?
 2. Co to `query parameters`?
 3. Co to funkcja anonimowa?
+4. Jakie metody HTTP odpowiadają operacjom CRUD?
