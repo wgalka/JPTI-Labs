@@ -39,4 +39,10 @@ Artisan::command('cleardatabase {db_name}', function ($db_name) {
 
 **web.php** - Trasy które zapewniają stan sesji, ochronę CSRF i szyfrowanie plików cookie.(Żądanie-Odpowiedź)
 
+Tworzenie routingu w pliku web.php:
+
+*Fasada jest wzorcem projektowym upraszczającym złożony zestaw klas lub bibliotekę w uproszczony interfejs*
+
+
+
 
