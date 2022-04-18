@@ -24,7 +24,7 @@ php artisan serve --host=127.0.0.1 --port=8080
  ┗ 📜web.php
 ```
 
-**api.php** - trasy powinny być bezstanowe uwierzytelniane tokenami. Nie powinny mieć dostępu do sesji.
+**api.php** - trasy powinny być bezstanowe uwierzytelniane tokenami. Nie powinny mieć dostępu do sesji.(REST API)
 
 **channels.php** - trasy obsługujące sterowanie zdarzeniami(wymiana informacji w czasie rzeczywistym np. czat, powiadomienie użytkownika(notification) o wysłaniu przetworzonego pliku bez konieczności ponownego przeładowania strony)
 
@@ -37,7 +37,6 @@ Artisan::command('cleardatabase {db_name}', function ($db_name) {
 })->purpose('Clearing database');
 ```
 
-**web.php**
+**web.php** - Trasy które zapewniają stan sesji, ochronę CSRF i szyfrowanie plików cookie.(Żądanie-Odpowiedź)
 
-Routing directory:
--
+
