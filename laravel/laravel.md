@@ -43,6 +43,22 @@ Tworzenie routingu w pliku web.php:
 
 *Fasada jest wzorcem projektowym upraszczającym złożony zestaw klas lub bibliotekę w uproszczony interfejs w tym przypadku komunikacja klient-server za pomocą protokołu HTTP udostepnia prosty interfejs np. `Route::get('/', function)`*
 
-
+Wybrane interfejsy oraz przykładowe `status code odpowiedzi` succes/failure:
+Utworzenie zasobu - CREATE :green_heart:201/404
+```php                        
+Route::post($uri, $callback); 
+```
+Odczytanie zasobu - READ 💚200 / 💥404
+```php                        
+Route::get($uri, $callback);  
+```    
+Aktualizacja zasobu - UPDATE 💚200 / 💥404
+```php
+Route::put($uri, $callback);
+```
+Usunięcie zasobu - DELETE 💚200 / 💥404
+```php
+Route::delete($uri, $callback);
+```
 
 
