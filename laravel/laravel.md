@@ -5,7 +5,7 @@
 ```powershell
 composer create-project laravel/laravel nazwa_projektu
 ```
-! Projekt zostanie utworzony w folderze w którym wywołamy polecenie
+❗Projekt zostanie utworzony w folderze w którym wywołamy polecenie
 
 ## Uruchamianie serwera
 
@@ -14,7 +14,7 @@ php artisan serve --host=127.0.0.1 --port=8080
 ```
 Po uruchomieniu serwera i wpisaniu w przeglądarke adresu hosta i portu otworzy się strona przywitalna frameworku Laravel.
 
-! Wywołując polecenie należy zwrócić uwagę czy jest wywoływane w głównym folderze projektu(w folderze w którym znajduje się plik artisan )
+❗Wywołując polecenie należy zwrócić uwagę czy jest wywoływane w głównym folderze projektu(w folderze w którym znajduje się plik artisan )
 
 ## Trasowanie
 
@@ -64,19 +64,55 @@ DELETE - Usunięcie zasobu 🟢200 🔴404
 Route::delete($uri, $callback);
 ```
 
-**Co podać jako $uri?**
+**Co podać jako `$uri`?**
 
 Statyczna ścieżka w postaći łańcucha znaków.
 ```php
 Route::get('/search', $function);
 ```
 
-`named parameters` czyli elementy w ścieżce które są dynamicznie generowane np. w podanym przykładzie routing obsłuży następujące żądania: 
+`named parameters` czyli elementy w ścieżce które są dynamicznie generowane np. w podanym niżej przykładzie routing obsłuży następujące żądania: 
 - /search/jan
 - /search/marek
-- ...
+- /search/zbigniew
+- itp.
 
 ```php
-Route::get('/search/<name>', $function);
+Route::get('/search/{name}', $function);
 ```
 
+Jeśli `named parameter` ma być opcjonalny należy użyć symbolu `?` po nazwie parametru przez co obsłuży następujące żądania:
+- /search
+- /search/jan
+- /search/marek
+- /search/zbigniew
+- itp.
+```php
+Route::get('/search/{name?}', $function);
+```
+
+**Co podać jako `$callback`?**
+
+Funkcję anonimową (funkcje bez nazwy)
+```php
+Route::get('/', function () {
+    return 'Hello world!';
+});
+```
+Tablicę w której pierwszy argument to klasa kontrolera obsługująca dany routing a drugi parametr to łańcuch znaków wskazujący metodę w klasie kontrolera:
+```php
+Route::get('/', [UserController::class, 'printhello']);
+```
+
+**Jak przetwarzać `named parameters`?
+
+Aby przetwarzać informacje z `named parameters` funkcja `$callback` powinna przyjmować parametry o tej samej nazwie:
+```php
+Route::get('/user/{nickname}/post/{post}', function ($nickname, $post) {
+    return "Post: ".$post." Created by ".$nickname;
+});
+```
+
+1. Co to `named parameters`?
+2. Co to `query parameters`?
+3. Co to funkcja anonimowa?
