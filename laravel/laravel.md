@@ -24,9 +24,19 @@ php artisan serve --host=127.0.0.1 --port=8080
  ┗ 📜web.php
 ```
 
-**api.php**
-**channels.php**
-**console.php**
+**api.php** - trasy powinny być bezstanowe uwierzytelniane tokenami. Nie powinny mieć dostępu do sesji.
+
+**channels.php** - trasy obsługujące sterowanie zdarzeniami(wymiana informacji w czasie rzeczywistym np. czat, powiadomienie użytkownika(notification) o wysłaniu przetworzonego pliku bez konieczności ponownego przeładowania strony)
+
+**console.php** - polecenia wywoływane z konsoli np. domyślnie zdefiniowana trasa 'inspire' może być wywołana przez nastepujące polecenie `php artisan inspire`. przykładowe użycie to np. skrypt czyszczący bazę danych czy wczytujący seed.
+
+```php
+Artisan::command('cleardatabase {db_name}', function ($db_name) {
+    //TODO usuwanie bazy danych
+    $this->info("Database cleared ".$db_name);
+})->purpose('Clearing database');
+```
+
 **web.php**
 
 Routing directory:
