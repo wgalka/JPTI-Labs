@@ -104,7 +104,7 @@ Tablicę w której pierwszy argument to klasa kontrolera obsługująca dany rout
 Route::get('/', [UserController::class, 'printhello']);
 ```
 
-**Jak przetwarzać `named parameters`?
+**Jak przetwarzać `named parameters`?**
 
 Aby przetwarzać informacje z `named parameters` funkcja `$callback` powinna przyjmować parametry o tej samej nazwie:
 ```php
