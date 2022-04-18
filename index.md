@@ -11,5 +11,5 @@ ___
 
 
 # AI
-- <a href="/laravel/laravel.html" style="color: #FFAA00;text-decoration: none;">Laboratorium 6</a> <sub>Lafavel</sub>
+- <a href="/laravel/laravel.html" style="color: #FFAA00;text-decoration: none;">Laboratorium 6</a> <sub>Laravel</sub>
 
