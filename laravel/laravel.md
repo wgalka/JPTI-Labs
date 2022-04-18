@@ -113,6 +113,8 @@ Route::get('/user/{nickname}/post/{post}', function ($nickname, $post) {
 });
 ```
 
+**
+
 1. Co to `named parameters`?
 2. Co to `query parameters`?
 3. Co to funkcja anonimowa?
