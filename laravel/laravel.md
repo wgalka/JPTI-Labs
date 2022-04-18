@@ -12,6 +12,8 @@ composer create-project laravel/laravel nazwa_projektu
 ```powershell
 php artisan serve --host=127.0.0.1 --port=8080 
 ```
+Po uruchomieniu serwera i wpisaniu w przeglądarke adresu hosta i portu otworzy się strona przywitalna frameworku Laravel.
+
 ! Wywołując polecenie należy zwrócić uwagę czy jest wywoływane w głównym folderze projektu(w folderze w którym znajduje się plik artisan )
 
 ## Trasowanie
@@ -62,4 +64,19 @@ DELETE - Usunięcie zasobu 🟢200 🔴404
 Route::delete($uri, $callback);
 ```
 
+**Co podać jako $uri?**
+
+Statyczna ścieżka w postaći łańcucha znaków.
+```php
+Route::get('/search', $function);
+```
+
+`named parameters` czyli elementy w ścieżce które są dynamicznie generowane np. w podanym przykładzie routing obsłuży następujące żądania: 
+- /search/jan
+- /search/marek
+- ...
+
+```php
+Route::get('/search/<name>', $function);
+```
 
