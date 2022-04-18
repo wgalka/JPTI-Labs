@@ -41,7 +41,7 @@ Artisan::command('cleardatabase {db_name}', function ($db_name) {
 
 Tworzenie routingu w pliku web.php:
 
-*Fasada jest wzorcem projektowym upraszczającym złożony zestaw klas lub bibliotekę w uproszczony interfejs*
+*Fasada jest wzorcem projektowym upraszczającym złożony zestaw klas lub bibliotekę w uproszczony interfejs w tym przypadku komunikacja klient-server za pomocą protokołu HTTP udostepnia prosty interfejs np. Route::get('/', function)*
 
 
 
