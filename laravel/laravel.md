@@ -156,6 +156,40 @@ Pełny adres URL żądania
 $url = $request->fullUrl();
 ```
 
+## Tworzenie kontrolerów
+
+Aby uniknąć definiowania całej logiki aplikacji w pliku z routingiem najlepiej zorganizować kod w klasy kontrolerów odpowiadające za konkretne zadania(np. zarządzanie użytkownikiem(logowanie, rejestracja, zmiana danych itp.))
+
+Klasy kontrolerów definiujemy w lokalizacji app/Http/Controllers/.
+```
+📦app
+ ┗ 📂Http
+   ┗ 📂Controllers
+     ┗ 📜Controller.php
+```
+
+Klasa kontrolera powinna dziecziczyć po bazowej klasie `Controller`. Przykładowa klasa kontrolera:
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+
+class MyTestController extends Controller
+{
+    function hello(Request $request)
+    {
+        return "Hello World!"
+    }
+}
+```
+Przekierowanie sterowania do kontrolera zostało pokazane w punkcie *Co podać jako `$callback`?*. Przykładowe wywołanie metody hello z powyższego kontrolera w pliku `web.php`:
+```php
+Route::get('/hello', [MyTestController::class, 'hello']);
+``
+
+
 
 1. Co to `named parameters`?
 2. Co to `query parameters`?
