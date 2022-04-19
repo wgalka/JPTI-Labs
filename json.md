@@ -33,19 +33,19 @@ Pliki json posiadają rozszerzenie `.json` np. `package.json`
 ["aple", "onion", "pear"]
 ```
 
-W pliku JSON może znajdowac się tylko jeden główny obiekt lub tablica(korzeń jak w formacie XML)❗
+- W pliku JSON może znajdowac się tylko jeden główny obiekt lub tablica(korzeń jak w formacie XML)❗
 
-Obiekt i tablica mogą zawierać inne obiekty lub tablice❗
+- Obiekt i tablica mogą zawierać inne obiekty lub tablice❗
 
-W odróżnieniu od Javascript nazwy pól zapisujemy w `"`. W JSON nie używamy znaków `'`❗
+- W odróżnieniu od Javascript nazwy pól zapisujemy w `"`. W JSON nie używamy znaków `'`❗
 
-Pary atrybut wartość odzielamy `,`❗
+- Pary atrybut wartość odzielamy `,`❗
 
-Po ostatniej wartośći nie może być znaku `,`❗
+- Po ostatniej wartośći nie może być znaku `,`❗
 
-W formacie JSON nie ma komentarzy❗
+- W formacie JSON nie ma komentarzy❗
 
-⚠️W odniesieniu do baz danych używane jest pojęcie [`JSON Documents`](https://www.ibm.com/docs/en/db2/11.5?topic=json-client-access-documents) gdzie zdefiniowane jest więcej typów danych. BSON jest formatem używanym w MongoDB do zapisu danych. 
+- W odniesieniu do baz danych używane jest pojęcie [`JSON Documents`](https://www.ibm.com/docs/en/db2/11.5?topic=json-client-access-documents) gdzie zdefiniowane jest więcej typów danych. BSON jest formatem używanym w MongoDB do zapisu danych. ⚠️
 
 ## Typy danych w JSON
 
@@ -261,6 +261,8 @@ let jsonstring = JSON.stringify(jsonobj)
 
 console.log(jsonstring)
 ```
+- Wartości niepoprawne z punktu widzenia tego formatu np. funkcje zostaną pominięte ❗
+
 Przekształcanie JSON na obiekt Javascript:
 ```Javascript
 let jsonobj = JSON.parse(jsonstring)
@@ -291,7 +293,7 @@ let jsonstring = JSON.stringify(jsonobj)
 console.log(jsonstring)
 ```
 
-❗Nazwy pól w obiekcie JSON mogą zawierać znak `-` który przez Javascript jest traktowany jako operator. By odwołać się do takiego pola można w następujący sposób: `jsonobj['my-key']`
+- Nazwy pól w obiekcie JSON mogą zawierać znak `-` który przez Javascript jest traktowany jako operator. By odwołać się do takiego pola można w następujący sposób: `jsonobj['my-key']`❗
 
 1. Zaprojektować strukturę JSON reprezentującą mieszkanie i dane z różnych czujników które znajdowałyby się w danych pomieszczeniach. Przykładowe założenia:
     - Mieszkanie może mieć pewną nazwę jednoznacznie je indetyfikującą(id)
