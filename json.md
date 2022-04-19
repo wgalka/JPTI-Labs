@@ -41,6 +41,8 @@ Jest niezależeny od JavaScript. Dzięki parserom dane przesyłane są w formaci
 
 ❗po ostatniej wartośći nie może być znaku `,`
 
+❗W formacie JSON nie ma komentarzy
+
 ## Typy danych w JSON
 
 ### String (łańcuch znaków)
@@ -83,5 +85,12 @@ Jest niezależeny od JavaScript. Dzięki parserom dane przesyłane są w formaci
 ```JSON
 {
   "arr": [1, 2, 3, 4]
+}
+```
+
+### Null
+```JSON
+{
+  "questions": null
 }
 ```
