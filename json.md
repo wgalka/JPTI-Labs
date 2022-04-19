@@ -122,7 +122,7 @@ Jest niezależeny od JavaScript. Dzięki parserom dane przesyłane są w formaci
             },
             "active": false,
             "hobbies": [
-                "skiing",
+                "Skiing",
                 "Art",
                 "Diving"
             ]
@@ -156,7 +156,7 @@ Te same dane w formacie XML
             <street>Wrzosowa</street>
          </adress>
          <hobbies>
-            <element>skiing</element>
+            <element>Skiing</element>
             <element>Art</element>
             <element>Diving</element>
          </hobbies>
