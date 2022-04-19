@@ -167,3 +167,34 @@ Te same dane w formacie XML
    </users>
 </root>
 ```
+
+## Przetwarzanie JSON w Javascript
+
+Przed przesłaniem obiektu JavaScript należy przekształcić go na łańcuch znaków do czego służy metoda `JSON.stringify()`:
+```Javascript
+var jsonobj = {id : 1, nickname:"Example1", emal: "mailme@login.com", password:"123456"}
+
+let jsonstring = JSON.stringify(jsonobj)
+
+console.log(jsonstring)
+```
+Przekształcanie JSON na obiekt Javascript:
+```Javascript
+let jsonobj = JSON.parse(jsonstring)
+```
+Dostęp do składowych obiektu:
+```Javascript
+var jsonobj = {id : 1, nickname:"Example1", emal: "mailme@login.com", password:"123456", hobbies:["Skiing","Cooking","Rafting"]}
+
+// Odczyt id
+let id = jsonobj.id
+console.log(id)
+// Odczyt tablicy hobbies
+let hobbies = jsonobj.hobbies
+console.log(hobbies)
+// Odczyt pierwszego hobby
+let hobby = jsonobj.hobbies[0]
+console.log(hobby)
+```
+
+
