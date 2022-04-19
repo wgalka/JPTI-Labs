@@ -210,7 +210,7 @@ var jsonstring = JSON.stringify(jsonobj)
 console.log(jsonstring)
 ```
 
-❗Nazwy pól w obiekcie JSON mogą zawierać znak `-` który przez Javascript jest traktowany jako operator. By odwołać się do takiego pola można w następujący sposób: `jsonobject['my-key']`
+❗Nazwy pól w obiekcie JSON mogą zawierać znak `-` który przez Javascript jest traktowany jako operator. By odwołać się do takiego pola można w następujący sposób: `jsonobj['my-key']`
 
 1. Zaprojektować strukturę JSON reprezentującą mieszkanie i dane z różnych czujników które znajdowałyby się w danych pomieszczeniach. Przykładowe założenia:
     - Mieszkanie może mieć pewną nazwę jednoznacznie je indetyfikującą(id)
