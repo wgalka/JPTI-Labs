@@ -174,7 +174,7 @@ Te same dane w formacie XML
 
 ## JSON Schema
 
-W dużych projektach chcemy mieć pewność że JSON ma określoną strukturę. W tym celu wykorzystuje się [JSON Schema](https://json-schema.org/learn/getting-started-step-by-step).
+W dużych projektach chcemy mieć pewność że JSON ma określoną strukturę. W tym celu wykorzystuje się [JSON Schema](https://json-schema.org/learn/getting-started-step-by-step).(Do walidacji formatu XML istnieją rozwiązania: XML DTD i XML Schema)
 
 JSON schema to dokumenty JSON opisujące jak powinna wyglądać struktura przesyłanego JSON. Definiujemy ją za pomocą słów kluczowych:
 - `$schema` - określa z jakim standardem został stworzony schemat
