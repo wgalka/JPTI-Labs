@@ -8,7 +8,7 @@ Jest niezależeny od JavaScript. Dzięki parserom dane przesyłane są w formaci
 
 ## Podstawowe struktury JSON:
 
-### Obiekt
+### Object (obiekt)
 ```JSON
 {}
 ```
@@ -21,7 +21,7 @@ Jest niezależeny od JavaScript. Dzięki parserom dane przesyłane są w formaci
 }
 ```
 
-### Tablica
+### Array (tablica)
 
 ```JSON
 []
@@ -31,7 +31,57 @@ Jest niezależeny od JavaScript. Dzięki parserom dane przesyłane są w formaci
 ["aple", "onion", "pear"]
 ```
 
+❗W pliku JSON może znajdowac się tylko jeden główny obiekt lub tablica(korzeń jak w formacie XML).
+
+❗Obiekt i tablica mogą zawierać inne obiekty lub tablice.
 
 ❗w odróżnieniu od Javascript nazwy pól zapisujemy w `"`. W JSON nie używamy znaków `'`
+
 ❗pary atrybut wartość odzielamy `,`.
+
 ❗po ostatniej wartośći nie może być znaku `,`
+
+## Typy danych w JSON
+
+### String (łańcuch znaków)
+
+```JSON
+{
+  "text1":"Wartości tekstowe zapisujemy w podwójnych cudzysłowiach"
+}
+```
+
+### Number
+
+```JSON
+{
+  "val1": 10
+  "val2": 200.99
+}
+```
+
+### Bolean
+
+```JSON
+{
+  "val1": true
+  "val2": false
+}
+```
+### Object
+
+```JSON
+{
+  "obj": {
+      "name": "Jan",
+      "age": 34
+  }
+}
+```
+
+### Array
+```JSON
+{
+  "arr": [1, 2, 3, 4]
+}
+```
