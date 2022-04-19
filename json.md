@@ -184,12 +184,46 @@ JSON schema to dokumenty JSON opisujące jak powinna wyglądać struktura przesy
 - `properties` - definiuje jakie właściwości ma mieć dany JSON. `"properties": {"nazwaWłaściwości" : {"type": "typWłaściwości"}}
 ```json
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/wgalka/JPTI-Labs/main/helpers/json/schema.json",
-  "title": "homes",
-  "description": "Array of home objects",
-  "type": "array",
-  "properties": { 
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$id": "https://raw.githubusercontent.com/wgalka/JPTI-Labs/main/helpers/json/schema.json",
+    "type": "object",
+    "properties": {
+        "users": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "nick": {
+                            "type": "string"
+                        },
+                        "age": {
+                            "type": "integer"
+                        },
+                        "hobbies": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "nick",
+                        "age",
+                        "hobbies"
+                    ]
+                }
+            ]
+        }
+    },
+    "required": [
+        "users"
+    ]
 }
 ```
 
