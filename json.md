@@ -12,9 +12,19 @@ Jest niezależeny od JavaScript. Dzięki parserom dane przesyłane są w formaci
 ```JSON
 {}
 ```
+**Tworzenie pól w obiekcie**
+```JSON
+{
+  "name": "value",
+  "imie": "Jan",
+  "nazwisko": "Kowalski"
+}
+```
 
 ### Tablica
 
 ```JSON
 []
 ```
+
+
