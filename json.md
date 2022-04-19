@@ -236,6 +236,6 @@ console.log(timenow)
 
 Aby wczytać dane z pliku użyj funkcji `require`
 ```Javascript
-const jsonobj = require('./flats.json')
+let jsonobj = require('./flats.json')
 console.log(jsonobj);
 ```
