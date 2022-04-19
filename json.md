@@ -176,12 +176,13 @@ Te same dane w formacie XML
 
 W dużych projektach chcemy mieć pewność że JSON ma określoną strukturę. W tym celu wykorzystuje się [JSON Schema](https://json-schema.org/learn/getting-started-step-by-step).
 
-JSON schema to dokumenty JSON opisujące jak powinna wyglądać struktura przesyłanych danych. Definiujemy ją za pomocą słów kluczowych:
+JSON schema to dokumenty JSON opisujące jak powinna wyglądać struktura przesyłanego JSON. Definiujemy ją za pomocą słów kluczowych:
 - `$schema` - określa z jakim standardem został stworzony schemat
 - `$id` - URL do schematu (w ramach laboratorium można udostępnić schemat na github lub darmowym hostingu)
 - `title` i `description` - Opis niemający wpływu na walidację JSON.
 - `type` - definiuje jaki typ danych ma być w miejscu wystąpienia
-- `properties` - definiuje jakie właściwości ma mieć dany JSON. `"properties": {"nazwaWłaściwości" : {"type": "typWłaściwości"}}
+- `properties` - definiuje jakie właściwości ma mieć dany JSON. `"properties": {"nazwaWłaściwości" : {"type": "typWłaściwości"}}`
+- `required` - wskazuje które właściwości musi posiadać JSON
 ```json
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
@@ -226,7 +227,29 @@ JSON schema to dokumenty JSON opisujące jak powinna wyglądać struktura przesy
     ]
 }
 ```
+Dla powyższego przykładu poprawna będzie poniższa struktura JSON
+```json
+{
+    "users": [
+        {
+            "nick": "Nickname123",
+            "age": 12,
+            "hobbies": [
+                "Skiing",
+                "Climbing"
+            ]
+        },
+        {
+            "nick": "Nickname12",
+            "age": 12,
+            "hobbies": null
+        }
+    ]
+}
+```
+Do walidacji dokumentów potrzebny jest walidator: https://json-schema.org/implementations.html
 
+Na potrzeby laboratorium by sprawdzić poprawność JSON z utworzonym schematem można skorzystać ze strony: https://www.jsonschemavalidator.net/
 
 ## Przetwarzanie JSON w Javascript
 
