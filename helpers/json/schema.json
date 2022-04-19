@@ -1,7 +1,7 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/product.schema.json",
-  "title": "Product",
-  "description": "A product in the catalog",
-  "type": "object"
-}
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/wgalka/JPTI-Labs/main/helpers/json/schema.json",
+    "title": "homes",
+    "description": "Array of home objects",
+    "type": "array"
+  }
