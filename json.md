@@ -12,7 +12,7 @@ Jest niezależeny od JavaScript. Dzięki parserom dane przesyłane są w formaci
 ```JSON
 {}
 ```
-**Tworzenie pól w obiekcie** (w odróżnieniu od Javascript nazwy pól zapisujemy w `"`. W JSON nie używamy znaków `'`)
+**Tworzenie pól w obiekcie** 
 ```JSON
 {
   "name": "value",
@@ -26,5 +26,12 @@ Jest niezależeny od JavaScript. Dzięki parserom dane przesyłane są w formaci
 ```JSON
 []
 ```
+**Tworzenie wartości w tablicy**
+```JSON
+["aple", "onion", "pear"]
+```
 
 
+❗w odróżnieniu od Javascript nazwy pól zapisujemy w `"`. W JSON nie używamy znaków `'`
+❗pary atrybut wartość odzielamy `,`.
+❗po ostatniej wartośći nie może być znaku `,`
