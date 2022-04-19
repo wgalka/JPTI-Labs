@@ -224,6 +224,8 @@ console.log(jsonstring)
 
 2. Utworzyć dwa przykładowe różne mieszkania.
 3. Utworzyć stronę z formularzem który wczyta dane konkretnego mieszkania a następnie wyświetli dane na jego temat w czytelny sposób. Wykorzystać framework Bootstrap do stworzenia interfejsu lub inne frameworki. Np. jeśli światło jest zaświecone na stronie przy danym pokoju pojawia się  [ikona żarówki](https://icons.getbootstrap.com/icons/lightbulb/) jeśli jest zgaszone to [inna ikona](https://icons.getbootstrap.com/icons/lightbulb-off/)
+4. ``` if (przedmiot === "JPiTI"): goto("Laboratorium 7 MongoDB") ```
+
 
 W Javascript metoda `Date.now()` zwraca datę w postaci timestamp w obecnej chwili
 ```Javascript
