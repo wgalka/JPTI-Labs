@@ -45,6 +45,8 @@ Pliki json posiadają rozszerzenie `.json` np. `package.json`
 
 ❗W formacie JSON nie ma komentarzy
 
+⚠️W odniesieniu do baz danych używane jest pojęcie [`JSON Documents`](https://www.ibm.com/docs/en/db2/11.5?topic=json-client-access-documents) gdzie zdefiniowane jest więcej typów danych. BSON jest formatem używanym w MongoDB do zapisu danych. 
+
 ## Typy danych w JSON
 
 ### String (łańcuch znaków)
@@ -169,6 +171,10 @@ Te same dane w formacie XML
    </users>
 </root>
 ```
+
+## JSON Schema
+
+W dużych projektach chcemy mieć pewność że JSON ma określoną strukturę 
 
 ## Przetwarzanie JSON w Javascript
 
