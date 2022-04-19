@@ -33,17 +33,17 @@ Pliki json posiadają rozszerzenie `.json` np. `package.json`
 ["aple", "onion", "pear"]
 ```
 
-❗W pliku JSON może znajdowac się tylko jeden główny obiekt lub tablica(korzeń jak w formacie XML).
+W pliku JSON może znajdowac się tylko jeden główny obiekt lub tablica(korzeń jak w formacie XML)❗
 
-❗Obiekt i tablica mogą zawierać inne obiekty lub tablice.
+Obiekt i tablica mogą zawierać inne obiekty lub tablice❗
 
-❗w odróżnieniu od Javascript nazwy pól zapisujemy w `"`. W JSON nie używamy znaków `'`
+W odróżnieniu od Javascript nazwy pól zapisujemy w `"`. W JSON nie używamy znaków `'`❗
 
-❗pary atrybut wartość odzielamy `,`.
+Pary atrybut wartość odzielamy `,`❗
 
-❗po ostatniej wartośći nie może być znaku `,`
+Po ostatniej wartośći nie może być znaku `,`❗
 
-❗W formacie JSON nie ma komentarzy
+W formacie JSON nie ma komentarzy❗
 
 ⚠️W odniesieniu do baz danych używane jest pojęcie [`JSON Documents`](https://www.ibm.com/docs/en/db2/11.5?topic=json-client-access-documents) gdzie zdefiniowane jest więcej typów danych. BSON jest formatem używanym w MongoDB do zapisu danych. 
 
