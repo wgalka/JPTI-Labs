@@ -220,7 +220,7 @@ console.log(jsonstring)
     - W pomieszczeniach jest pewna temperatura.
     - W pomieszczeniach jest pewna wilgotność powietrza.
     - W pomieszczeniach jest pewna ilość źródeł światła o których wiemy czy są włączone czy nie.
-    - W pomieszczeniach mozemy znać temperaturę grzejników.
+    - W pomieszczeniach możemy znać temperaturę grzejników.
 
 2. Utworzyć dwa przykładowe różne mieszkania.
 3. Utworzyć stronę z formularzem który wczyta dane konkretnego mieszkania a następnie wyświetli dane na jego temat w czytelny sposób. Wykorzystać framework Bootstrap do stworzenia interfejsu lub inne frameworki. Np. jeśli światło jest zaświecone na stronie przy danym pokoju pojawia się  [ikona żarówki](https://icons.getbootstrap.com/icons/lightbulb/) jeśli jest zgaszone to [inna ikona](https://icons.getbootstrap.com/icons/lightbulb-off/)
