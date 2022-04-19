@@ -249,7 +249,7 @@ Dla powyższego przykładu poprawna będzie poniższa struktura JSON
 ```
 Do walidacji dokumentów potrzebny jest walidator: https://json-schema.org/implementations.html
 
-Na potrzeby laboratorium by sprawdzić poprawność JSON z utworzonym schematem można skorzystać ze strony: https://www.jsonschemavalidator.net/
+❔By sprawdzić poprawność JSON z utworzonym schematem bez instalacji bibliotek można skorzystać ze strony: https://www.jsonschemavalidator.net/
 
 ## Przetwarzanie JSON w Javascript
 
