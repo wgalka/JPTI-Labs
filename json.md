@@ -94,3 +94,76 @@ Jest niezależeny od JavaScript. Dzięki parserom dane przesyłane są w formaci
   "questions": null
 }
 ```
+
+## Przykładowy JSON zawierający dane na temat użytkownika aplikacji
+```JSON
+{
+    "users": [
+        {
+            "id": 123,
+            "name": "Jan",
+            "lastname": "Kowalski",
+            "adress": {
+                "street": "Azaliowa",
+                "postalcode": "35-000",
+                "city": "Radom"
+            },
+            "active": true,
+            "hobbies": null
+        },
+        {
+            "id": 672,
+            "name": "Marek",
+            "lastname": "Nowak",
+            "adress": {
+                "street": "Wrzosowa",
+                "postalcode": "38-000",
+                "city": "Chełm"
+            },
+            "active": false,
+            "hobbies": [
+                "skiing",
+                "Art",
+                "Diving"
+            ]
+        }
+    ]
+}
+```
+
+Te same dane w formacie XML
+```XML
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <users>
+      <element>
+         <active>true</active>
+         <adress>
+            <city>Radom</city>
+            <postalcode>35-000</postalcode>
+            <street>Azaliowa</street>
+         </adress>
+         <hobbies null="true" />
+         <id>123</id>
+         <lastname>Kowalski</lastname>
+         <name>Jan</name>
+      </element>
+      <element>
+         <active>false</active>
+         <adress>
+            <city>Chełm</city>
+            <postalcode>38-000</postalcode>
+            <street>Wrzosowa</street>
+         </adress>
+         <hobbies>
+            <element>skiing</element>
+            <element>Art</element>
+            <element>Diving</element>
+         </hobbies>
+         <id>672</id>
+         <lastname>Nowak</lastname>
+         <name>Marek</name>
+      </element>
+   </users>
+</root>
+```
