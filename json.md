@@ -197,4 +197,34 @@ let hobby = jsonobj.hobbies[0]
 console.log(hobby)
 ```
 
+Zmiana danych obiektu JSON:
+```Javascript
+var jsonobj = {id : 1, nickname:"Example1", emal: "mailme@login.com", password:"123456", hobbies:["Skiing","Cooking","Rafting"]}
+jsonobj.id = 4
+jsonobj.hobbies = null
 
+var jsonstring = JSON.stringify(jsonobj)
+
+console.log(jsonstring)
+```
+
+1. Zaprojektować strukturę JSON reprezentującą mieszkanie i dane z różnych czujników które znajdowałyby się w danych pomieszczeniach. Przykładowe założenia:
+    - Mieszkanie może mieć pewną nazwę jednoznacznie je indetyfikującą(id)
+    - Dokument JSON reprezentuje stan mieszkania w danym momencie. Informacje o tym w jakim można przechowywać w polu jako `timestamp` - jest to liczba milisekund która upłynęła od 1 stycznia 1970 00:00:00 UTC.
+    - Mieszkanie skłąda się z wielu pokoji.
+    - Pomieszczenia mają pewne wymiary.
+    - W pomieszczeniach jest pewna temperatura.
+    - W pomieszczeniach jest pewna wilgotność powietrza.
+    - W pomieszczeniach jest pewna ilość źródeł światła o których wiemy czy są włączone czy nie.
+    - 
+
+
+
+
+
+W Javascript metoda `Date.now()` zwraca datę w postaci timestamp w obecnej chwili
+```Javascript
+let timenow = Date.now()
+
+console.log(timenow)
+```
