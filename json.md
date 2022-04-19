@@ -210,6 +210,8 @@ var jsonstring = JSON.stringify(jsonobj)
 console.log(jsonstring)
 ```
 
+❗Nazwy pól w obiekcie JSON mogą zawierać znak `-` który przez Javascript jest traktowany jako operator. By odwołać się do takiego pola można w następujący sposób: `jsonobject['my-key']`
+
 1. Zaprojektować strukturę JSON reprezentującą mieszkanie i dane z różnych czujników które znajdowałyby się w danych pomieszczeniach. Przykładowe założenia:
     - Mieszkanie może mieć pewną nazwę jednoznacznie je indetyfikującą(id)
     - Dokument JSON reprezentuje stan mieszkania w danym momencie. Informacje o tym w jakim można przechowywać w polu jako `timestamp` - jest to liczba milisekund która upłynęła od 1 stycznia 1970 00:00:00 UTC.
@@ -232,4 +234,10 @@ W Javascript metoda `Date.now()` zwraca datę w postaci timestamp w obecnej chwi
 let timenow = Date.now()
 
 console.log(timenow)
+```
+
+Aby wczytać dane z pliku użyj funkcji `require`
+```Javascript
+const jsonobj = require('./flats.json')
+console.log(jsonobj);
 ```
