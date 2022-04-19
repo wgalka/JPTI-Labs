@@ -181,13 +181,15 @@ JSON schema to dokumenty JSON opisujące jak powinna wyglądać struktura przesy
 - `$id` - URL do schematu (w ramach laboratorium można udostępnić schemat na github lub darmowym hostingu)
 - `title` i `description` - Opis niemający wpływu na walidację JSON.
 - `type` - definiuje jaki typ danych ma być w miejscu wystąpienia
+- `properties` - definiuje jakie właściwości ma mieć dany JSON. `"properties": {"nazwaWłaściwości" : {"type": "typWłaściwości"}}
 ```json
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/wgalka/JPTI-Labs/main/helpers/json/schema.json",
   "title": "homes",
   "description": "Array of home objects",
-  "type": "array"
+  "type": "array",
+  "properties": { 
 }
 ```
 
@@ -246,7 +248,8 @@ console.log(jsonstring)
 
 2. Utworzyć dwa przykładowe różne mieszkania.
 3. Utworzyć stronę z formularzem który wczyta dane konkretnego mieszkania a następnie wyświetli dane na jego temat w czytelny sposób. Wykorzystać framework Bootstrap do stworzenia interfejsu lub inne frameworki. Np. jeśli światło jest zaświecone na stronie przy danym pokoju pojawia się  [ikona żarówki](https://icons.getbootstrap.com/icons/lightbulb/) jeśli jest zgaszone to [inna ikona](https://icons.getbootstrap.com/icons/lightbulb-off/)
-4. ``` if (przedmiot === "JPiTI"){ goto("Laboratorium 7 MongoDB") } ```
+4. \*Utworz JSON Schema walidujący zaprojektowaną strukturę.
+5. ``` if (przedmiot === "JPiTI"){ goto("Laboratorium 7 MongoDB") } ```
 
 
 W Javascript metoda `Date.now()` zwraca datę w postaci timestamp w obecnej chwili
