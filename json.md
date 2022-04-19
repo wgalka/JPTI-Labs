@@ -174,7 +174,23 @@ Te same dane w formacie XML
 
 ## JSON Schema
 
-W dużych projektach chcemy mieć pewność że JSON ma określoną strukturę 
+W dużych projektach chcemy mieć pewność że JSON ma określoną strukturę. W tym celu wykorzystuje się [JSON Schema](https://json-schema.org/learn/getting-started-step-by-step).
+
+JSON schema to dokumenty JSON opisujące jak powinna wyglądać struktura przesyłanych danych. Definiujemy ją za pomocą słów kluczowych:
+- `$schema` - określa z jakim standardem został stworzony schemat
+- `$id` - URL do schematu (w ramach laboratorium można udostępnić schemat na github lub darmowym hostingu)
+- `title` i `description` - Opis niemający wpływu na walidację JSON.
+- `type` - definiuje jaki typ danych ma być w miejscu wystąpienia
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/wgalka/JPTI-Labs/main/helpers/json/schema.json",
+  "title": "homes",
+  "description": "Array of home objects",
+  "type": "array"
+}
+```
+
 
 ## Przetwarzanie JSON w Javascript
 
