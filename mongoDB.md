@@ -4,8 +4,8 @@ MongoDB jest nierelacyjną bazą danych(NoSQL).
 
 Dane przechowywane są za pomocą:
 
-    - Kolekcji
-    - Dokumentów
+   - Kolekcji
+   - Dokumentów
 
 ## Tworzenie klastra
 ![image](https://user-images.githubusercontent.com/37069490/164544317-65d71f29-d271-407a-9fb1-2d2843b230a1.png)
