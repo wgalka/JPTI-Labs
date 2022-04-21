@@ -3,6 +3,7 @@
 MongoDB jest nierelacyjną bazą danych(NoSQL).
 
 Dane przechowywane są za pomocą:
+
     - Kolekcji
     - Dokumentów
 
