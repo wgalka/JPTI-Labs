@@ -7,6 +7,17 @@ Dane przechowywane są za pomocą:
    - Kolekcji
    - Dokumentów
 
+**Kolekcje** - grupy dokuemntów. Dokumenty w kolekcji nie muszą mieć takiej samej struktury. W odniesiueniu do relacyjnych baz danych odpowiadają tabelom.
+
+**Dokument** - rekord w kolekcji(w odniesieniu do relacyjnych baz danych - wiersz w tabeli) w MongoDB ma strukturę podobną do JSON.
+
+Dokumenty składają się z pól czyli par `nazwa: wartość`
+```JSON
+{
+   name: "Value"
+}
+```
+
 ## Tworzenie klastra
 ![image](https://user-images.githubusercontent.com/37069490/164544317-65d71f29-d271-407a-9fb1-2d2843b230a1.png)
 
