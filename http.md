@@ -6,6 +6,7 @@
 - Adres URL zasobu
 - Wersji protokołu - HTTP/1.1
 - Nagłówki
+- Wiadomość
 
 ### Metody żądań HTTP
 
@@ -31,6 +32,12 @@ Przykładowy adres URL
 
 ### Nagłówki
 
-Pozostałe informacje zapisane w parach atrybut-wartość oddzielonych znakiem `:` np. ciasteczka, informacje o przeglądarce, adresie ip z którego zostało wysłane żądanie itp.
+Pozostałe informacje zapisane w parach atrybut-wartość oddzielonych znakiem `:` np. ciasteczka, informacje o kliencie z którego zostało wysłane żądanie(wersja przeglądarki), adresie ip z którego zostało wysłane żądanie itp.
 
+### Wiadomość
 
+W większośći przypadków żądania nie posiadają wiadomośći. Wyjątkiem jest metoda `POST` która może zawierać dane z formularza w wiadomości.
+
+## Budowa odpowiedzi HTTP
+
+- 
