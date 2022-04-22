@@ -41,9 +41,9 @@ W większośći przypadków żądania nie posiadają wiadomośći. Wyjątkiem je
 ## Budowa odpowiedzi HTTP
 
 - Wersja protokołu - HTTP/1.1
-- Status żądania HTTP
+- Status odpowiedzi HTTP
 - Nagłówki
-- Wiadomość(Odpowiedź)
+- Treść odpowiedzi
 
 ### Statusy żądania HTTP
 
@@ -56,4 +56,24 @@ W większośći przypadków żądania nie posiadają wiadomośći. Wyjątkiem je
 `400` do `499` - Błąd po stronie klienta
 
 `500` do `599` - Błąd po stronie serwera
+
+### Nagłówki odpowiedzi HTTP
+
+Struktura jest taka sama jak w żądaniach HTTP. Nagłówki odpoweidzi HTTP zawierają np. informacje na temat typu dokumentu przesłanego w wiadomośći w atrybucie `Content-type`.
+
+Wybrane typy treści odpowiedzi(`Content-type`):
+- application/json
+- application/xml
+- image/gif
+- image/jpeg
+- image/png
+-	text/css
+- text/csv
+- text/html
+- text/javascript (obsolete)
+- text/plain
+- text/xml
+
+
+### Wiadomość
 
