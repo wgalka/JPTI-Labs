@@ -19,7 +19,9 @@ Dokumenty składają się z pól czyli par `nazwa: wartość`
 ```
 Bazę można przechowywać za darmo w chmurze: https://www.mongodb.com/atlas/database
 
-Tworzenie klastra i bazy danych w chmurze
+lub Lokalnie tworząc servwer bazodanowy:  https://www.mongodb.com/try/download/community
+
+## Tworzenie klastra i bazy danych w chmurze
    
 ![img](https://user-images.githubusercontent.com/37069490/164544317-65d71f29-d271-407a-9fb1-2d2843b230a1.png)
 
@@ -43,11 +45,22 @@ Tworzenie bazy danych
 
 ![img](https://user-images.githubusercontent.com/37069490/164548247-c8e9cb78-f269-4d21-b06b-35e2b87f8b2b.png)
 
-lub Lokalnie tworząc servwer bazodanowy:  https://www.mongodb.com/try/download/community
+## Lokalna baza danych
+
+1. Zainstaluj serwer bazodanowy z domyślnymi ustawieniami.(dalej, dalej, dalej).
+2. W likalizacji `C:/Program Files/MongoDB/Server/5.0/bin` znajduje się plik `mongo.exe` który uruchamia serwer bazodanowy.
+3. Na pulpicie po winien znajdować się skrót do narzędzia MongoDB Compass (GUI do obsługi bazy danych)
+
+![image](https://user-images.githubusercontent.com/37069490/164791680-ab21bc9b-18a7-47f9-8566-e0cb89d6b53e.png)
+
+5. Połącz się z bazą danych klikając Connect
+
+Tworzenie bazy danych
+
+![image](https://user-images.githubusercontent.com/37069490/164791884-841761fc-6a96-40e3-886e-9e70660bd016.png)
+![image](https://user-images.githubusercontent.com/37069490/164791952-92b598be-e7b5-44a1-8e7f-499224de306d.png)
 
 
-
-   
 1. Utwórz konto na https://www.mongodb.com/
 2. Utwórz klaster `Cluster0`
 3. Na klastrze `Cluster0` utwórz bazę `home_db` a w niej kolekcję `sensors`.
