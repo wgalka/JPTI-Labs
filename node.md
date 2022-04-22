@@ -25,7 +25,7 @@ Po aktywacji konkretnej wersji aby sprawdzić czy jest ona aktywna użyj polecen
 
 ## Node.js
 
-Zamiast korzystać z narzędzia nvm node.js można pograć i zainstalować bezpośrednio ze strony 
+Zamiast korzystać z narzędzia nvm node.js można pobrać i zainstalować bezpośrednio ze strony 
 https://nodejs.org/en/.
 
 ### NPM - Node package manager
@@ -39,7 +39,7 @@ wykorzystujący tę samą bazę danych pakietów, z której korzysta npm.
 
 **npm jest instalowany wraz z Node.**
 
-Do instalacji pkietów służy polecenie `npm install -g nazwa_pakietu` np:
+`npm install -g nazwa_pakietu` - instalacja pkietów:
 ![image](https://user-images.githubusercontent.com/37069490/163167221-c594de5b-6041-43e2-b7f7-6424ad313f3f.png)
 opcja -g wskazuje że pakiet powinien być zainstalowany globalnie. Użycie polecenia bez tej opcji utworzy folder node_modules w folderze w którym zostało wywołane polecenie.
 
