@@ -66,7 +66,6 @@ Test
 2. Utwórz klaster `Cluster0`
 3. Na klastrze `Cluster0` utwórz bazę `home_db` a w niej kolekcję `sensors`.
 4. W kolekcji sensors utwórz dokument reprezentującą mieszkanie i dane z różnych czujników które znajdowałyby się w danych pomieszczeniach. Przykładowe założenia:
-
     - Mieszkanie może mieć pewną nazwę jednoznacznie je indetyfikującą(id)
     - Dokument reprezentuje stan mieszkania w danym momencie.
     - Mieszkanie skłąda się z wielu pokoji.
