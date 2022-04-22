@@ -20,8 +20,9 @@ ___
 ## JSON
 
 1. Wymień typy danych JSON. Podaj przykład który będzie zawierał wszystkie typy danych.
-2. Czym jest JSON?
-3. Rozwiń akronim JSON.
-4. Jakie znasz inne formaty wymiany danych?
-5. Czym jest JSON Schema?
-6. 
+2. Czym jest JSON. Rozwiń akronim JSON.
+5. Czym jest i do czego jest wykorzystywany JSON Schema?
+4. Jakie znasz inne formaty wymiany danych? Jak nazywamy technologie sprawdzające ich poprawność?
+5. Przekształć przykład z zadania 1 na dowolny inny format wymiany danych.
+
+
