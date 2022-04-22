@@ -322,11 +322,16 @@ Aby wczytać dane z pliku użyj funkcji `require` lub `fetch`
 let jsonobj = require('./flats.json')
 console.log(jsonobj);
 ```
+Zaimportuj funkcję require:
+```HTML
+<script data-main="scripts/main" src="scripts/require.js"></script>
+```
 
  ```Javascript
  fetch('http://example.com/movies.json')
   .then(response => response.json())
   .then(data => console.log(data));
  ```
+Funkcja fetch nie działa na pliki lokalne❗
 
 
