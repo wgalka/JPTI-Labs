@@ -317,21 +317,14 @@ let timenow = Date.now()
 console.log(timenow)
 ```
 
-Aby wczytać dane z pliku użyj funkcji `require` lub `fetch`
+Aby wczytać dane z pliku użyj funkcji `require`
 ```Javascript
 let jsonobj = require('./flats.json')
 console.log(jsonobj);
 ```
-Zaimportuj funkcję require:
+Import funkcji [require](https://requirejs.org/):
 ```HTML
 <script data-main="scripts/main" src="scripts/require.js"></script>
 ```
-
- ```Javascript
- fetch('http://example.com/movies.json')
-  .then(response => response.json())
-  .then(data => console.log(data));
- ```
-Funkcja fetch nie działa na pliki lokalne❗
 
 
