@@ -20,6 +20,7 @@ Dokumenty składają się z pól czyli par `nazwa: wartość`
 
 <details>
    <summary>Tworzenie klastra</summary>
+
 ## Tworzenie klastra i bazy danych w chmurze
 ![image](https://user-images.githubusercontent.com/37069490/164544317-65d71f29-d271-407a-9fb1-2d2843b230a1.png)
 
@@ -42,6 +43,7 @@ Dokumenty składają się z pól czyli par `nazwa: wartość`
 ![image](https://user-images.githubusercontent.com/37069490/164548099-9deaba05-cf51-437f-8020-047a7cb4c245.png)
 
 ![image](https://user-images.githubusercontent.com/37069490/164548247-c8e9cb78-f269-4d21-b06b-35e2b87f8b2b.png)
+   
 </details>
    
 1. Utwórz konto na https://www.mongodb.com/
