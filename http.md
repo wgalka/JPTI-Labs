@@ -31,3 +31,6 @@ Przykładowy adres URL
 
 ### Nagłówki
 
+Pozostałe informacje zapisane w parach atrybut-wartość oddzielonych znakiem `:` np. ciasteczka, informacje o przeglądarce, adresie ip z którego zostało wysłane żądanie itp.
+
+
