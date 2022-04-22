@@ -40,4 +40,16 @@ W większośći przypadków żądania nie posiadają wiadomośći. Wyjątkiem je
 
 ## Budowa odpowiedzi HTTP
 
-- 
+- Wersja protokołu - HTTP/1.1
+- Status żądania HTTP
+- Nagłówki
+- Wiadomość(Odpowiedź)
+
+### Statusy żądania HTTP
+
+`100` - `199` - Odpowiedź informacyjna
+`200` - `299` - Odpowiedź udana
+`300` - `399` - Przekierowanie
+`400` - `499` - Błąd po stronie klienta
+`500` - `599` - Błąd po stronie serwera
+
