@@ -77,3 +77,26 @@ Wybrane typy treści odpowiedzi(`Content-type`):
 
 ### Wiadomość
 
+Dokument typu zdefiniowanego w nagłówku odpowiedzi.
+
+## Przykład żądania i odpowiedzi
+
+Większość przeglądarek udostępnia narzędzia developerskie umożlwiające wyświetlenie danych.
+
+Instrukcja dla google chrome:
+1. Wciśnij prawy przycisk myszy w dowolnym miejscu na stronie. Wybierz opcję zbadaj.
+
+![image](https://user-images.githubusercontent.com/37069490/164784622-115ff060-4b60-4e38-b935-d40c1ec0c507.png)
+
+2. Z prawej strony wiświetli się narzędzie developerskie. Wybierz zakładkę Network
+
+![image](https://user-images.githubusercontent.com/37069490/164784736-c21e1faa-7d66-41dc-a26d-7d886147d995.png)
+![image](https://user-images.githubusercontent.com/37069490/164784924-1a658e9a-e7a2-4c9a-b837-b4aeaeb6ac66.png)
+
+3. Odśwież stronę i wybierz dokument który ma nazwę jak domena steony.
+
+![image](https://user-images.githubusercontent.com/37069490/164785094-e8b75bd4-7949-4c05-bf4d-b19e28b15300.png)
+![image](https://user-images.githubusercontent.com/37069490/164785140-328ac335-f2ee-4146-aee5-6d5d7558fe87.png)
+
+
+
