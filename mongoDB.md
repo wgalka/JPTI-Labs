@@ -61,6 +61,7 @@ Tworzenie bazy danych
 
 ![image](https://user-images.githubusercontent.com/37069490/164791952-92b598be-e7b5-44a1-8e7f-499224de306d.png)
 
+Test
 1. Utwórz konto na https://www.mongodb.com/
 2. Utwórz klaster `Cluster0`
 3. Na klastrze `Cluster0` utwórz bazę `home_db` a w niej kolekcję `sensors`.
