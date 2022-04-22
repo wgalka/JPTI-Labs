@@ -22,6 +22,6 @@ Protokół HTTP ma 8 metod żądania. Najważniejsze z nich to:
 
 `protocol`://`host`/`path`?`query params`
 
-`https`://`js.lazysolutions.pl`/`json.html`?`name=Jan`
+`https`://`js.lazysolutions.pl`/`jpiti/json.html`?`name=Jan`
 
 
