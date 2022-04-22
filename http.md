@@ -4,6 +4,7 @@
 
 - Metoda żądania HTTP
 - Adres URL zasobu
+- Wersji protokołu - HTTP/1.1
 - Nagłówki
 
 ### Metody żądań HTTP
