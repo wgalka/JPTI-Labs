@@ -58,6 +58,7 @@ Tworzenie bazy danych
 Tworzenie bazy danych
 
 ![image](https://user-images.githubusercontent.com/37069490/164791884-841761fc-6a96-40e3-886e-9e70660bd016.png)
+
 ![image](https://user-images.githubusercontent.com/37069490/164791952-92b598be-e7b5-44a1-8e7f-499224de306d.png)
 
 
