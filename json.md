@@ -317,8 +317,16 @@ let timenow = Date.now()
 console.log(timenow)
 ```
 
-Aby wczytać dane z pliku użyj funkcji `require`
+Aby wczytać dane z pliku użyj funkcji `require` lub `fetch`
 ```Javascript
 let jsonobj = require('./flats.json')
 console.log(jsonobj);
 ```
+
+ ```Javascript
+ fetch('http://example.com/movies.json')
+  .then(response => response.json())
+  .then(data => console.log(data));
+ ```
+
+
