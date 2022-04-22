@@ -24,7 +24,7 @@ Protokół HTTP ma 8 metod żądania. Najważniejsze z nich to:
 
 Budowa adresu URL:
 
-`protocol`://`host`/`path`?`query params`
+`protocol`://`host`/`path`?`query string`
 
 Przykładowy adres URL
 
