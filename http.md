@@ -21,8 +21,11 @@ Protokół HTTP ma 8 metod żądania. Najważniejsze z nich to:
 ### Adres URL zasobu
 
 Budowa adresu URL:
+
 `protocol`://`host`/`path`?`query params`
+
 Przykładowy adres URL
+
 `https`://`js.lazysolutions.pl`/`jpiti/json.html`?`name=Jan`
 
 ### Nagłówki
