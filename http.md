@@ -47,15 +47,15 @@ W większośći przypadków żądania nie posiadają wiadomośći. Wyjątkiem je
 
 ### Statusy żądania HTTP
 
-`100` do `199` - Odpowiedź informacyjna
+🟡`100` do `199` - Odpowiedź informacyjna
 
-`200` do `299` - Odpowiedź udana
+🟢`200` do `299` - Odpowiedź udana
 
-`300` do `399` - Przekierowanie
+🟢`300` do `399` - Przekierowanie
 
-`400` do `499` - Błąd po stronie klienta
+🔴`400` do `499` - Błąd po stronie klienta
 
-`500` do `599` - Błąd po stronie serwera
+🔴`500` do `599` - Błąd po stronie serwera
 
 ### Nagłówki odpowiedzi HTTP
 
