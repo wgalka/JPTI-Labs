@@ -1,12 +1,13 @@
 # Protokół HTTP
 
-## Budowa adresu URL
+##Metody żądań HTTP
 
+Protokół HTTP ma 8 metod żądania. Najważniejsze z nich to:
 
-przykładowy HTTP request
-```http
-GET /users?name=Jan HTTP/1.1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36
-HOST: 127.0.0.1:8000
-```
+**POST** - Żądania tego typu powinny przesyłać dane z formularzy, tworzyć nowe zasoby itp. (CREATE)
 
+**GET** - Żądania tego typu głużą do odczytu zasobu. (READ)
+
+**PUT** - Żądania tego typu służą do aktualizacji zasobów. (UPDATE)
+
+**DELETE** - Żądania tego typu powinny usuwać zasoby. (DELETE)
