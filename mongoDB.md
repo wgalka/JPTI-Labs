@@ -18,7 +18,7 @@ Dokumenty składają się z pól czyli par `nazwa: wartość`
 }
 ```
 
-## Tworzenie klastra
+## Tworzenie klastra i bazy danych w chmurze
 ![image](https://user-images.githubusercontent.com/37069490/164544317-65d71f29-d271-407a-9fb1-2d2843b230a1.png)
 
 ![image](https://user-images.githubusercontent.com/37069490/164545067-3713c45a-a7ea-407a-8f9f-c69ceb1c2fe9.png)
