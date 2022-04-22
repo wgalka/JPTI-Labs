@@ -17,6 +17,10 @@ ___
 
 
 
+## HTML
+
+1. Rowziń skrót HTML.
+
 ## JSON
 
 1. Wymień typy danych JSON. Podaj przykład który będzie zawierał wszystkie typy danych.
