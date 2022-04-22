@@ -35,7 +35,7 @@ ___
 2. Z jakich skłądowych składa się odpowiedź HTTP?
 3. Wymień metody protokołu HTTP odpowiadające operacjom CRUD na bazie danych?
 4. Omów budowę adresu URL?
-    - co to `query parameters`?
+    - co to `query string`?
     - wymień protokoły http
     - pozostałe składowe
 
