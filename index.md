@@ -29,4 +29,17 @@ ___
 4. Jakie znasz inne formaty wymiany danych? Jak nazywamy technologie sprawdzające ich poprawność?
 5. Przekształć przykład z zadania 1 na dowolny inny format wymiany danych.
 
+## Protokół HTTP
+
+1. Z jakich składowych składa się żądanie HTTP?
+2. Z jakich skłądowych składa się odpowiedź HTTP?
+3. Wymień metody protokołu HTTP odpowiadające operacjom CRUD na bazie danych?
+4. Omów budowę adresu URL?
+    - co to `query parameters`?
+    - wymień protokoły http
+    - pozostałe składowe
+
+
+
+
 
