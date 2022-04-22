@@ -297,7 +297,7 @@ Nazwy pól w obiekcie JSON mogą zawierać znak `-` który przez Javascript jest
 
 1. Zaprojektować strukturę JSON reprezentującą mieszkanie i dane z różnych czujników które znajdowałyby się w danych pomieszczeniach. Przykładowe założenia:
     - Mieszkanie może mieć pewną nazwę jednoznacznie je indetyfikującą(id)
-    - Dokument JSON reprezentuje stan mieszkania w danym momencie. Informacje o tym w jakim można przechowywać w polu jako `timestamp` - jest to liczba milisekund która upłynęła od 1 stycznia 1970 00:00:00 UTC.
+    - Dokument JSON reprezentuje stan mieszkania w danym momencie. Informacje o tym w jakim momencie zostały odczytane można przechowywać w polu jako `timestamp` - jest to liczba milisekund która upłynęła od 1 stycznia 1970 00:00:00 UTC.
     - Mieszkanie skłąda się z wielu pokoji.
     - Pomieszczenia mają pewne wymiary.
     - W pomieszczeniach jest pewna temperatura.
