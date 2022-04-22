@@ -15,3 +15,13 @@ ___
 # AI
 - <a href="/laravel/laravel.html" style="color: #FFAA00;text-decoration: none;">Laboratorium 6</a> <sub>Laravel</sub>
 
+
+
+## JSON
+
+1. Wymień typy danych JSON. Podaj przykład który będzie zawierał wszystkie typy danych.
+2. Czym jest JSON?
+3. Rozwiń akronim JSON.
+4. Jakie znasz inne formaty wymiany danych?
+5. Czym jest JSON Schema?
+6. 
