@@ -16,7 +16,7 @@
 # AI
 - <a href="/laravel/laravel.html" style="color: #FFAA00;text-decoration: none;">Laboratorium 6</a> <sub>Laravel</sub>
 
-
+- <a href="/laravel/pytania.html" style="color: #FFAA00;text-decoration: none;">Pytania zaliczeniowe</a> <sub>_</sub>
 
 ## HTML
 
