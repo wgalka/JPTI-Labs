@@ -234,12 +234,14 @@ app.get('/greet', function (req, res) {
 ```
 
 ***
+- Utwórz bazę danych `example_db` w mongoDB
+- Utwórz kolekcję `example` a w niej kilka dokumentów skłądających się z: nicku, hasła, kierunku, daty
 
 1. Utwórz projekt frameworku Express z plikiem uruchamiającym aplikacje routing.js
 2. Skonfiguruj ścieżki do plików statycznych i szablonów.
-3. Pobierz framework Bootstrap w wersji 5 i umieść w folderze public. Utwórz w folderze `layout` szablon `wraper.hbd` który w sekcji head wczyta pliki potrzebne do korzystania z frameworku. W sekcji body - menu składające się z przycisków: SHOW, CREATE, EDIT
+3. Pobierz framework Bootstrap w wersji 5 i umieść w folderze public. Utwórz w folderze `layout` szablon `wraper.hbs` który w sekcji head wczyta pliki potrzebne do korzystania z frameworku. W sekcji body - menu składające się z przycisków: SHOW, CREATE, EDIT
 4. Utwórz routing `/` oraz szablon `index.hbs` zawierający przykładową karuzelę bootstrapa.
-5. Utwórz routing `/create` oraz szablon `create.hbd` a w nim formularz z polami:
+5. Utwórz routing `/create` oraz szablon `create.hbs` a w nim formularz z polami:
     - nick (wartość tekstowa)
     - hasło (pole na hasło)
     - kierunek (lista wartości: północ, południe itp.)
@@ -248,4 +250,4 @@ app.get('/greet', function (req, res) {
     
     Dokonaj walidacji formularza na stronie https://validator.w3.org/#validate_by_input Jeśli występują jakieś błędy popraw je.
     Utwórz odpowiednie hiperłącze w menu przenoszące do dormularza po kliknięciu CREATE
-6. 
+6. Utwórz routing `/show` który połączy się z bazą danych mongoDB, pobierze dane z kolekcji example i przekaże je do widoku `show.hbs`. Widok `show` powinien wyświetlić te dane w postaci tabeli.[pętle w handlebars](https://handlebarsjs.com/guide/builtin-helpers.html#each)
