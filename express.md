@@ -1,18 +1,20 @@
 # Express
 
-## Inicjalizacja projektu node.js
+## Szkielet aplikacji
+
+### Inicjalizacja projektu node.js
 ```comandprompt
 npm init
 ```
 ![image](https://user-images.githubusercontent.com/37069490/165591165-73c8403e-f76f-4bc7-ab6b-4ab8305c2805.png)
 
-## Instalacja frameworku express
+### Instalacja frameworku express
 ```comndprompt
 npm install express
 ```
 ![image](https://user-images.githubusercontent.com/37069490/165591433-51974081-4b21-4d44-ab86-8f0187d83f9f.png)
 
-## Utworzenie pliku uruchamiajacego aplikację
+### Utworzenie pliku uruchamiajacego aplikację
 Utwórz plik index.js(nazwa może być dowolna jednak należy pamiętać że przy innej nazwie należy zmienić wartość w pliku package.json) o nastepującej zawartości:
 ```javascript
 const express = require('express')
@@ -46,6 +48,40 @@ app.listen(port, () => console.log(
     `Example app listening on http://localhost:${port} (CTRL + C to exit)`))
 ```
 
-## Uruchomienie aplikacji
+### Uruchomienie aplikacji
 ```comandprompt
 node .\index.js
+```
+
+## Silnik szablonów
+Dostępne silniki szablonów: https://expressjs.com/en/resources/template-engines.html
+### Instalacja silnika handlebars
+
+```comandprompt
+npm install express-handlebars
+```
+
+### Konfiguracja silnika
+W pliku index.js należy dodać następujące instrukcje:
+```javascript
+// Import silnika szablonów handlebars
+// Użycie dekonstruktora - z obiektu została pobrana funkcja engine
+const { engine } = require('express-handlebars')
+
+// Ustawienie głownego layoutu oraz rozszerzeń szablonów na .hbs.
+app.engine('hbs', engine({
+    defaultLayout: 'main',
+    extname: '.hbs'
+}));
+// Ustawienie handlebars jako głownego silnika szablonów aplikacji
+app.set('view engine', 'hbs');
+```
+Widoki będą przechowyane w lokalizacji `views/layouts`
+```
+📦app
+ ┣ 📂node_modules
+ ┣ 📂public
+ ┣ 📂views
+   ┣ 📂layouts
+   ┗ 📜main.hbs
+```
