@@ -15,6 +15,7 @@ npm install express
 ![image](https://user-images.githubusercontent.com/37069490/165591433-51974081-4b21-4d44-ab86-8f0187d83f9f.png)
 
 ### Utworzenie pliku uruchamiajacego aplikację
+W omówionym pliku definiowany jest routing aplikacji: https://expressjs.com/en/guide/routing.html
 Utwórz plik index.js(nazwa może być dowolna jednak należy pamiętać że przy innej nazwie należy zmienić wartość w pliku package.json) o nastepującej zawartości:
 ```javascript
 const express = require('express')
