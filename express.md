@@ -237,12 +237,15 @@ app.get('/greet', function (req, res) {
 
 1. Utwórz projekt frameworku Express z plikiem uruchamiającym aplikacje routing.js
 2. Skonfiguruj ścieżki do plików statycznych i szablonów.
-3. Pobierz framework Bootstrap w wersji 5 i umieść w folderze public. Utwórz `layout` który w sekcji head wczyta pliki potrzebne do korzystania z frameworku. W sekcji body menu składające się z przycisków SHOW, CREATE, EDIT
+3. Pobierz framework Bootstrap w wersji 5 i umieść w folderze public. Utwórz w folderze `layout` szablon `wraper.hbd` który w sekcji head wczyta pliki potrzebne do korzystania z frameworku. W sekcji body - menu składające się z przycisków: SHOW, CREATE, EDIT
 4. Utwórz routing `/` oraz szablon `index.hbs` zawierający przykładową karuzelę bootstrapa.
-5. Utwórz szablon `create.hbd` a w nim formularz z polami:
+5. Utwórz routing `/create` oraz szablon `create.hbd` a w nim formularz z polami:
     - nick (wartość tekstowa)
     - hasło (pole na hasło)
     - kierunek (lista wartości: północ, południe itp.)
     - data (kalendarz)
-
-Dokonaj walidacji formularza na stronie https://validator.w3.org/#validate_by_input Jeśli występują jakieś błędy popraw je.
+    - przycisku wyślij (type='submit')
+    
+    Dokonaj walidacji formularza na stronie https://validator.w3.org/#validate_by_input Jeśli występują jakieś błędy popraw je.
+    Utwórz odpowiednie hiperłącze w menu przenoszące do dormularza po kliknięciu CREATE
+6. 
