@@ -80,6 +80,7 @@ Dostęp do pliku `mc1.jpg` można uzyskać pod adresem [localhost:8000/img/mc1.j
 <img src="/img/mc1.jpg" alt="Jakieś zdjęcie">
 ```
 ## Routing
+### Metody express odpowiedzialne za przetwarzanie odpowiednich żądań
 https://expressjs.com/en/guide/routing.html
 Najważniejsze metody obiektu app wywoływane gdy do aplikacji trafi żądanie HTTP ze zdefiniowanymi kolejno metodami: POST, GET, PUT, DELETE
 ```javascript
@@ -88,7 +89,17 @@ app.get('/read',function(){})
 app.put('/update',function(){})
 app.delete('/delete',function(){})
 ```
-
+### `named parameters`
+Parametry w adresie url których wartości mogą być różne definiujemy za pomocą znaku `:` po czym podajemu nazwę parametru.
+```javascript
+app.get('/post/:user/:id', function (req, res) { res.send(req.params) })
+```
+Powyższy routing obsłuży następujące adresy:
+```
+http://localhost:8000/post/marek/1432
+http://localhost:8000/post/darek/ASD
+...
+```
 
 
 ## Przetwarzanie żądań
