@@ -55,7 +55,7 @@ app.listen(port, () => console.log(
 node .\index.js
 ```
 
-### Pliki statyczne
+## Pliki statyczne
 W pliku `index.js` dodaj następującą konfigurację(zwróć uwagę na kolejność funkcji, nieprawidłowa kolejność możę doprowadzić że funkcja nigdy nie zostanie wywołana)
 ```javascript
 // Pliki statyczne (css, zdjęcia na stronie głównej itp.)
@@ -79,6 +79,17 @@ Dostęp do pliku `mc1.jpg` można uzyskać pod adresem [localhost:8000/img/mc1.j
 ```
 <img src="/img/mc1.jpg" alt="Jakieś zdjęcie">
 ```
+## Routing
+https://expressjs.com/en/guide/routing.html
+Najważniejsze metody obiektu app wywoływane gdy do aplikacji trafi żądanie HTTP ze zdefiniowanymi kolejno metodami: POST, GET, PUT, DELETE
+```javascript
+app.post('/create',function(){})
+app.get('/read',function(){})
+app.put('/update',function(){})
+app.delete('/delete',function(){})
+```
+
+
 
 ## Przetwarzanie żądań
 
@@ -86,16 +97,16 @@ Dostęp do pliku `mc1.jpg` można uzyskać pod adresem [localhost:8000/img/mc1.j
 https://expressjs.com/en/api.html#req
 https://expressjs.com/en/api.html#res
 ```javascript
-app.get('/req_test', function (req, res) {
+app.get('/req_test/:id', function (req, res) {
     let result = ""
-    result += req.baseUrl + "\n"
+    result += req.url + "\n"
     result += req.body +"\n"
     result += req.ip +"\n"
     result += req.method +"\n"
     // Odczytywanie parametru name z `query params`
     result += req.query['name'] +"\n"
     // Odczytanie wartosći `named parameters`
-    result += req.params +"\n"
+    result += JSON.stringify(req.params) +"\n"
 
     // Ustawienie ciasteczek odpowiedzi
     res.cookie('mojeCiasteczko','Moja wartość')
@@ -107,6 +118,8 @@ app.get('/req_test', function (req, res) {
     res.send(result)
 })
 ```
+Wypróbuj powyższe trasowanie na poniższym adresie:
+[http://localhost:8000/req_test/12?name=JAN&surname=Kowalski](http://localhost:8000/req_test/12?name=JAN&surname=Kowalski)
 
 ## Silnik szablonów
 Dostępne silniki szablonów: https://expressjs.com/en/resources/template-engines.html
