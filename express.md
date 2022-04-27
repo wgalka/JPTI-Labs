@@ -76,7 +76,8 @@ app.engine('hbs', engine({
 // Ustawienie handlebars jako głownego silnika szablonów aplikacji
 app.set('view engine', 'hbs');
 ```
-Widoki będą przechowyane w lokalizacji `views/layouts`
+Widoki będą przechowyane w lokalizacji `views`.
+Folder `layouts` zawiera szablon główny.
 ```
 📦app
  ┣ 📂node_modules
@@ -84,4 +85,42 @@ Widoki będą przechowyane w lokalizacji `views/layouts`
  ┣ 📂views
    ┣ 📂layouts
    ┗ 📜main.hbs
+```
+### Utworzenie domyślnego szablonu
+Utwórz plik `main.hbs` w `views\layouts` z następującą zawartością:
+```hbs
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main view</title>
+</head>
+<body>
+    {{{body}}}
+</body>
+</html>
+```
+W miejsce {{{body}}} będzie podstawiana treść z szablonów zawierających konkretne treści.
+
+Utwórz plik `index.hbs` w `views` z nastepującą zawartością:
+```
+📦app
+ ┣ 📂node_modules
+ ┣ 📂public
+ ┣ 📂views
+   ┣ 📜index.hbs
+   ┣ 📂layouts
+   ┗ 📜main.hbs
+```
+```hbs
+<h1> Strona Główna </h1>
+```
+### Renderowanie szablonu
+```javascript
+app.get('/', function (req, res) {
+    // Jako argument funkcji render podajemy nazwę szablonu z folderu views
+    res.render('index')
+})
 ```
