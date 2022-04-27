@@ -184,7 +184,7 @@ app.get('/greet', function (req, res) {
 })
 ```
 Utwórz plik `greet.hbs` w folderze `views`. `{{name}}` zostanie zastapione wartością zmiennej `name` przekazanej do szablonu w kodzie wyżej.
-```
+```hbs
 <h1>Hello {{name}}!</h1>
 ```
 
