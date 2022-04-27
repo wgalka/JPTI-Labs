@@ -48,4 +48,4 @@ app.listen(port, () => console.log(
 
 ## Uruchomienie aplikacji
 ```comandprompt
-node .\
+node .\index.js
