@@ -82,8 +82,9 @@ Dostęp do pliku `mc1.jpg` można uzyskać pod adresem [localhost:8000/img/mc1.j
 
 ## Przetwarzanie żądań
 
-### Obiekt Request
+### Obiekt Request i Response
 https://expressjs.com/en/api.html#req
+https://expressjs.com/en/api.html#res
 ```javascript
 app.get('/req_test', function (req, res) {
     let result = ""
@@ -96,8 +97,13 @@ app.get('/req_test', function (req, res) {
     // Odczytanie wartosći `named parameters`
     result += req.params +"\n"
 
+    // Ustawienie ciasteczek odpowiedzi
+    res.cookie('mojeCiasteczko','Moja wartość')
+    // Ustawienie typu wiadomości zdefiniowany w nagłówku HTTP
     res.type('text/plain')
+    // Ustawienie statusu odpowiedzi HTTP
     res.status(200)
+    // Ustawienie Treści wiadomości HTTP
     res.send(result)
 })
 ```
