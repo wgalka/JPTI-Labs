@@ -1,5 +1,9 @@
 # Express
 
+- <a href="/json.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>JSON</sub>
+- <a href="/mongoDB.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>MongoDB</sub>
+- <a href="/node.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>Node.js</sub>
+
 ## Szkielet aplikacji
 
 ### Inicjalizacja projektu node.js
@@ -228,3 +232,8 @@ app.get('/greet', function (req, res) {
 })
 ```
 
+***
+
+1. Utwórz projekt frameworku Express z plikiem uruchamiającym aplikacje routing.js
+2. Skonfiguruj ścieżki do plików statycznych i szablonów.
+3. 
