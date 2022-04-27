@@ -20,6 +20,7 @@ Utwórz plik index.js(nazwa może być dowolna jednak należy pamiętać że prz
 const express = require('express')
 const app = express()
 
+// Funkcja która ma być wywołana po wpisaniu adresu localhost:8000/
 app.get('/', function (req,res){
     res.send("Hello world")
 })
@@ -51,6 +52,31 @@ app.listen(port, () => console.log(
 ### Uruchomienie aplikacji
 ```comandprompt
 node .\index.js
+```
+
+### Pliki statyczne
+W pliku `index.js` dodaj następującą konfigurację(zwróć uwagę na kolejność funkcji, nieprawidłowa kolejność możę doprowadzić że funkcja nigdy nie zostanie wywołana)
+```javascript
+// Pliki statyczne (css, zdjęcia na stronie głównej itp.)
+// W przykładzie będą znajdować się w folderze public(należy utworzyć taki folder)
+app.use(express.static('public'))
+```
+
+Pliki statyczne będą przechowywane w folderze public według powyższych ustawień.
+```
+📦app
+ ┣ 📂node_modules
+ ┣ 📂public
+ ┃ ┗ 📂img
+ ┃   ┗ 📜mc1.jpg
+ ┣ 📂views
+ ┣ 📜index.js
+ ┣ 📜package-lock.json
+ ┗ 📜package.json
+```
+Dostęp do pliku `mc1.jpg` można uzyskać pod adresem [localhost:8000/img/mc1.jpg](localhost:8000/img/mc1.jpg). W kodzie HTML link do zdjęcia można będzie definiować w następujący sposób:
+```
+<img src="/img/mc1.jpg" alt="Jakieś zdjęcie">
 ```
 
 ## Silnik szablonów
@@ -125,3 +151,20 @@ app.get('/', function (req, res) {
     res.render('index')
 })
 ```
+
+### przekazywanie danych do szablonu i wyświetlanie ich
+W pliku index.js dodaj routing.
+```javascript
+app.get('/greet', function (req, res) {
+    // Jako drugi argument funkcji render podajemy obiekt z danymi które chcemy przekazać do szablonu
+    let name = "Jan"
+    res.render('greet', {name: name})
+})
+```
+Utwórz plik `greet.hbs` w folderze `views`. `{{name}}` zostanie zastapione wartością zmiennej `name` przekazanej do szablonu w kodzie wyżej.
+```
+<h1>Hello {{name}}!</h1>
+```
+
+
+
