@@ -219,5 +219,12 @@ Utwórz plik `greet.hbs` w folderze `views`. `{{name}}` zostanie zastapione wart
 <h1>Hello {{name}}!</h1>
 ```
 
-
+Jeśli chcemy użyć innego szablonu niż `main.hbs` w obiekcie należy dodać pole `layout`
+```javascript
+app.get('/greet', function (req, res) {
+    // Jako drugi argument funkcji render podajemy obiekt z danymi które chcemy przekazać do szablonu
+    let name = "Jan"
+    res.render('greet', {name: name, layout: 'my_other_layout' }})
+})
+```
 
