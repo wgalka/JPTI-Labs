@@ -118,6 +118,7 @@ Utwórz plik `index.hbs` w `views` z nastepującą zawartością:
 <h1> Strona Główna </h1>
 ```
 ### Renderowanie szablonu
+W pliku index.js zmodyfikuj główny routing.
 ```javascript
 app.get('/', function (req, res) {
     // Jako argument funkcji render podajemy nazwę szablonu z folderu views
