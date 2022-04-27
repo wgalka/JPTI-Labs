@@ -79,6 +79,28 @@ Dostęp do pliku `mc1.jpg` można uzyskać pod adresem [localhost:8000/img/mc1.j
 <img src="/img/mc1.jpg" alt="Jakieś zdjęcie">
 ```
 
+## Przetwarzanie żądań
+
+### Obiekt Request
+https://expressjs.com/en/api.html#req
+```javascript
+app.get('/req_test', function (req, res) {
+    let result = ""
+    result += req.baseUrl + "\n"
+    result += req.body +"\n"
+    result += req.ip +"\n"
+    result += req.method +"\n"
+    // Odczytywanie parametru name z `query params`
+    result += req.query['name'] +"\n"
+    // Odczytanie wartosći `named parameters`
+    result += req.params +"\n"
+
+    res.type('text/plain')
+    res.status(200)
+    res.send(result)
+})
+```
+
 ## Silnik szablonów
 Dostępne silniki szablonów: https://expressjs.com/en/resources/template-engines.html
 ### Instalacja silnika handlebars
