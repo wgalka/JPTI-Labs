@@ -61,7 +61,7 @@ Tworzenie bazy danych
 
 ![image](https://user-images.githubusercontent.com/37069490/164791952-92b598be-e7b5-44a1-8e7f-499224de306d.png)
 
-1. Utwórz konto na https://www.mongodb.com/
+<!-- 1. Utwórz konto na https://www.mongodb.com/
 2. Utwórz klaster `Cluster0`
 3. Na klastrze `Cluster0` utwórz bazę `home_db` a w niej kolekcję `sensors`.
 4. W kolekcji sensors utwórz dokument reprezentującą mieszkanie i dane z różnych czujników które znajdowałyby się w danych pomieszczeniach. Przykładowe założenia:
@@ -72,6 +72,6 @@ Tworzenie bazy danych
     - W pomieszczeniach jest pewna temperatura.
     - W pomieszczeniach jest pewna wilgotność powietrza.
     - W pomieszczeniach jest pewna ilość źródeł światła o których wiemy czy są włączone czy nie.
-    - W pomieszczeniach możemy znać temperaturę grzejników.
+    - W pomieszczeniach możemy znać temperaturę grzejników. -->
 
 
