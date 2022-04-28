@@ -233,6 +233,70 @@ app.get('/greet', function (req, res) {
 })
 ```
 
+## Połączenie z bazą danych
+
+### instalacja sterownika mongoose
+```comand prompt
+npm install mongoose
+```
+
+### Połączenie z bazą danych
+```javascript
+// Import biblioteki obsługującej MongoDB
+const mongoose = require("mongoose");
+
+// Adres servera bazodanowego
+const connectionString = "mongodb://127.0.0.1:27017/home_db"
+// Połączenie z bazą danych
+mongoose.connect(connectionString)
+const db = mongoose.connection
+db.on('error', err => {
+    console.error('Błąd MongoDB: ' + err.message)
+    process.exit(1)
+})
+
+console.log(db.getClient())
+```
+Aby uruchomić server bazodanowy należy odnaleźć plik:
+![image](https://user-images.githubusercontent.com/37069490/165848976-30227253-6346-44d9-9e54-08d2f1d83995.png)
+![image](https://user-images.githubusercontent.com/37069490/165849030-a20e15a5-56cf-40a3-8b70-638f58f1e6b6.png)
+
+### Tworzenie modelu
+```javascript
+// Import biblioteki
+const mongoose = require('mongoose')
+// Utworzenie schematu danych
+const dataSchema = mongoose.Schema({
+    title:  {type: String},
+    author: {type: String},
+    body:   {type: String},
+    comments: [{ body: {type: String}, date: {type: Date} }],
+})
+
+// CollectionName - nazwa kolekcji dokumentów tworzonych na podstawie schematu
+const MyCollection = mongoose.model('CollectionName', dataSchema)
+module.exports = MyCollection
+```
+### Utworzenie obiektu i zapis do bazy danych
+```javascript
+new MyCollection({
+    title:  "Example",
+    author: "Example",
+    body:   "Example",
+    comments: [{ body: "Example", date: new Date() }],
+}).save()
+```
+[https://mongoosejs.com/docs/models.html](https://mongoosejs.com/docs/models.html)
+
+### Odczyt danych
+Wyświetlenie wszystkich danych
+```javascript
+let data = MyCollection.find({}).exec().then(function(result){
+    console.log(result)
+  })
+```
+[https://mongoosejs.com/docs/models.html](https://mongoosejs.com/docs/models.html)
+
 ***
 - Utwórz bazę danych `example_db` w mongoDB
 - Utwórz kolekcję `example` a w niej kilka dokumentów skłądających się z: nicku, hasła, kierunku, daty
@@ -241,7 +305,7 @@ app.get('/greet', function (req, res) {
 2. Skonfiguruj ścieżki do plików statycznych i szablonów.
 3. Pobierz framework Bootstrap w wersji 5 i umieść w folderze public. Utwórz w folderze `layout` szablon `wraper.hbs` który w sekcji head wczyta pliki potrzebne do korzystania z frameworku. W sekcji body - menu składające się z przycisków: SHOW, CREATE, EDIT
 4. Utwórz routing `/` oraz szablon `index.hbs` zawierający przykładową karuzelę bootstrapa.
-5. Utwórz routing `/create` oraz szablon `create.hbs` a w nim formularz z polami:
+5. Utwórz routing `/createform`, `/create` oraz szablon `create.hbs` a w nim formularz z polami:
     - nick (wartość tekstowa)
     - hasło (pole na hasło)
     - kierunek (lista wartości: północ, południe itp.)
@@ -249,5 +313,10 @@ app.get('/greet', function (req, res) {
     - przycisku wyślij (type='submit')
     
     Dokonaj walidacji formularza na stronie https://validator.w3.org/#validate_by_input Jeśli występują jakieś błędy popraw je.
+    `/createform` zwraca formularz.
+    `/create` - wyświetla dane przekazane w formularzu(odczyt z query params)
     Utwórz odpowiednie hiperłącze w menu przenoszące do dormularza po kliknięciu CREATE
-6. Utwórz routing `/show` który połączy się z bazą danych mongoDB, pobierze dane z kolekcji example i przekaże je do widoku `show.hbs`. Widok `show` powinien wyświetlić te dane w postaci tabeli.[pętle w handlebars](https://handlebarsjs.com/guide/builtin-helpers.html#each)
+6. Utwórz plik `user.js` zawierający schemat oraz model User [Dokumentacja](https://mongoosejs.com/docs/guide.html)
+7. Skonfiguruj połączenie z bazą danych i zmodyfikuj routing `/create` by zapisywał dane z formularza do bazy danych a następnie wyświetlił użytkownikowi informacje 'Pomyślnie zapisano dane'
+8. Dodaj kilka rekordów do bazy danych. Wykorzystaj nakładkę Compass by sprawdzić czy obiekty zostały poprawnie zapisane.
+9. Utwórz routing `/showusers` zwracający użytkowników z bazy danych w postaci tabeli.
