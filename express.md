@@ -182,7 +182,7 @@ Utwórz plik `main.hbs` w `views\layouts` z następującą zawartością:
     <title>Main view</title>
 </head>
 <body>
-    {{{body}}}
+    <code>{{{body}}}<code>
 </body>
 </html>
 ```
