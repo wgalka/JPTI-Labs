@@ -51,7 +51,17 @@ Tworzenie bazy danych
 2. W likalizacji `C:/Program Files/MongoDB/Server/5.0/bin` znajduje się plik `mongo.exe` który uruchamia serwer bazodanowy.
 3. Na pulpicie po winien znajdować się skrót do narzędzia MongoDB Compass (GUI do obsługi bazy danych)
 
-![image](https://user-images.githubusercontent.com/37069490/164791680-ab21bc9b-18a7-47f9-8566-e0cb89d6b53e.png)
+    ![image](https://user-images.githubusercontent.com/37069490/164791680-ab21bc9b-18a7-47f9-8566-e0cb89d6b53e.png)
+
+    Jeśli nie ma skrótu Dodatek Compass znajdziesz w lokalizacji `C:\Users\<STUDENT>\AppData\Local\MongoDBCompass`:
+    
+    Przejsdz do folderu APPDATA (windows + R) i wpisz `%localappdata%`
+    
+    ![image](https://user-images.githubusercontent.com/37069490/165908632-96aa4e48-7c63-465f-aa73-0db259b8fafd.png)
+    
+    Zlokalizuj folder `MongoDBCompass` i plik uruchamiający aplikacje:
+    
+    ![image](https://user-images.githubusercontent.com/37069490/165908843-d84e9502-9759-4b37-9361-92e6d21a867c.png)
 
 5. Połącz się z bazą danych klikając Connect
 
