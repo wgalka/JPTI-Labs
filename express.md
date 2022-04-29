@@ -236,7 +236,7 @@ app.get('/greet', function (req, res) {
 ## Połączenie z bazą danych
 
 ### instalacja sterownika mongoose
-```comand prompt
+```comandprompt
 npm install mongoose
 ```
 
