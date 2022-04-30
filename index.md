@@ -1,6 +1,6 @@
 # JPTI
 
-- <a href="/javascript.html" style="color: #FFAA00; text-decoration: none;">Laboratorium 5</a> <sub>Javascript</sub>
+- <a href="/javascript.html" style="color: #FFAA00; text-decoration: none;">[Laboratorium 5</a> <sub>Javascript</sub>](javascript.md)
 - <a href="/json.html" style="color: #FFAA00;text-decoration: none;">Laboratorium 6</a> <sub>JSON</sub>
 - <a href="/express.html" style="color: #FFAA00;text-decoration: none;">Laboratorium 7</a> <sub>Express JS</sub>
     - <a href="/http.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>HTTP</sub>
