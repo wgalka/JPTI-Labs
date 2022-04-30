@@ -8,7 +8,7 @@
     - [Laboratorium <sub>Node.js</sub>](node.md)
 - [Laboratorium <sub>Model View Controller</sub>](nodeMVC.md)
 - [Laboratorium <sub>REST service</sub>](noderest.md)
-<br>
+
 [Pytania zaliczeniowe](pytania.md)
 
 # AI
