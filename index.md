@@ -8,10 +8,7 @@
 - <a href="/express.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>Express JS</sub>
 - <a href="/nodeMVC.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>Model View Controller</sub>
 - <a href="/nodeREST.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>REST service</sub>
-
 <br>
-<a href="/http.html" style="color: #FFAA00;text-decoration: none;">Protokół HTTP</a> <sub>HTTP</sub>
-
 <a href="/pytania.html" style="color: #FFAA00;text-decoration: none;">Pytania zaliczeniowe</a> <sub>HTTP</sub>
 
 # AI
