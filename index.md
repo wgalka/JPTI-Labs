@@ -14,7 +14,7 @@
 # AI
 - [Laboratorium 6 <sub>Laravel</sub>](laravel/laravel.md)
 
-- [Pytania zaliczeniowe](laravel/pytania.md)
+[Pytania zaliczeniowe](laravel/pytania.md)
 
 
 
