@@ -1,20 +1,20 @@
 # JPTI
 
-- [Laboratorium 5</a> <sub>Javascript</sub>](javascript.md)
-- [Laboratorium 6</a> <sub>JSON</sub>](json.md)
-- [Laboratorium 7</a> <sub>Express JS</sub>](express.md)
-    - [Laboratorium _</a> <sub>HTTP</sub>](http.md)
-    - [Laboratorium _</a> <sub>MongoDB</sub>](mongodb.md)
-    - [Laboratorium _</a> <sub>Node.js</sub>](node.md)
-- [Laboratorium _</a> <sub>Model View Controller</sub>](nodeMVC.md)
-- [Laboratorium _</a> <sub>REST service</sub>](noderest.md)
+- [Laboratorium 5<sub>Javascript</sub>](javascript.md)
+- [Laboratorium 6<sub>JSON</sub>](json.md)
+- [Laboratorium 7<sub>Express JS</sub>](express.md)
+    - [Laboratorium<sub>HTTP</sub>](http.md)
+    - [Laboratorium<sub>MongoDB</sub>](mongodb.md)
+    - [Laboratorium<sub>Node.js</sub>](node.md)
+- [Laboratorium<sub>Model View Controller</sub>](nodeMVC.md)
+- [Laboratorium<sub>REST service</sub>](noderest.md)
 <br>
-[Pytania zaliczeniowe</a>](pytania.md)
+[Pytania zaliczeniowe](pytania.md)
 
 # AI
-- [Laboratorium 6</a> <sub>Laravel</sub>](laravel/laravel.md)
+- [Laboratorium 6<sub>Laravel</sub>](laravel/laravel.md)
 
-- [Pytania zaliczeniowe</a>](laravel/pytania.md)
+- [Pytania zaliczeniowe](laravel/pytania.md)
 
 
 
