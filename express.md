@@ -1,9 +1,9 @@
 # Express
 
-- [Laboratorium _</a> <sub>JSON</sub>](json.md)
-- [Laboratorium _</a> <sub>HTTP</sub>](http.md)
-- [Laboratorium _</a> <sub>MongoDB</sub>](mongodb.md)
-- [Laboratorium _</a> <sub>Node.js</sub>](node.md)
+- [JSON](json.md)
+- [HTTP](http.md)
+- [MongoDB](mongodb.md)
+- [Node.js](node.md)
 
 ## Szkielet aplikacji
 
