@@ -1,20 +1,20 @@
 # JPTI
 
-- <a href="/javascript.html" style="color: #FFAA00; text-decoration: none;">[Laboratorium 5</a> <sub>Javascript</sub>](javascript.md)
-- <a href="/json.html" style="color: #FFAA00;text-decoration: none;">Laboratorium 6</a> <sub>JSON</sub>
-- <a href="/express.html" style="color: #FFAA00;text-decoration: none;">Laboratorium 7</a> <sub>Express JS</sub>
-    - <a href="/http.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>HTTP</sub>
-    - <a href="/mongoDB.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>MongoDB</sub>
-    - <a href="/node.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>Node.js</sub>
-- <a href="/nodeMVC.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>Model View Controller</sub>
-- <a href="/nodeREST.html" style="color: #FFAA00;text-decoration: none;">Laboratorium _</a> <sub>REST service</sub>
+- [Laboratorium 5</a> <sub>Javascript</sub>](javascript.md)
+- [Laboratorium 6</a> <sub>JSON</sub>](json.md)
+- [Laboratorium 7</a> <sub>Express JS</sub>](express.md)
+    - [Laboratorium _</a> <sub>HTTP</sub>](http.md)
+    - [Laboratorium _</a> <sub>MongoDB</sub>](mongodb.md)
+    - [Laboratorium _</a> <sub>Node.js</sub>](node.md)
+- [Laboratorium _</a> <sub>Model View Controller</sub>](nodeMVC.md)
+- [Laboratorium _</a> <sub>REST service</sub>](noderest.md)
 <br>
-<a href="/pytania.html" style="color: #FFAA00;text-decoration: none;">Pytania zaliczeniowe</a>
+[Pytania zaliczeniowe</a>](pytania.md)
 
 # AI
-- <a href="/laravel/laravel.html" style="color: #FFAA00;text-decoration: none;">Laboratorium 6</a> <sub>Laravel</sub>
+- [Laboratorium 6</a> <sub>Laravel</sub>](laravel/laravel.md)
 
-- <a href="/laravel/pytania.html" style="color: #FFAA00;text-decoration: none;">Pytania zaliczeniowe</a>
+- [Pytania zaliczeniowe</a>](laravel/pytania.md)
 
 
 
