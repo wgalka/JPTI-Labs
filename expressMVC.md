@@ -14,6 +14,7 @@ Najczęściej pliki odpowiadające za dane składowe przechowuje się w folderac
  ┣ 📂node_modules
  ┣ 📂views         <<<
  ┣ 📜.gitignore
+ ┣ 📜index.js
  ┣ 📜package-lock.json
  ┗ 📜package.json
  ```
