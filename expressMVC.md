@@ -28,5 +28,9 @@ npm install nodemon
 
 Aby uruchomić serwer wpisz w konsoli
 ```comandprompt
-nodemon index.js
+nodemon
 ```
+
+`nodemon` w pliku `package.json` wyszuka wartość pola `"main"`.
+
+
