@@ -18,3 +18,15 @@ Najczęściej pliki odpowiadające za dane składowe przechowuje się w folderac
  ┣ 📜package-lock.json
  ┗ 📜package.json
  ```
+
+## Uruchamianie serwera w trybie developerskim(restartowanie serwera przy zmianach w plikach)
+
+Zainstaluj pakiet nodemon
+```ComandPrompt
+npm install nodemon
+```
+
+Aby uruchomić serwer wpisz w konsoli
+```comandprompt
+nodemon index.js
+```
