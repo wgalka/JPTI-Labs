@@ -6,8 +6,8 @@
     - [Laboratorium <sub>HTTP</sub>](http.md)
     - [Laboratorium <sub>MongoDB</sub>](mongodb.md)
     - [Laboratorium <sub>Node.js</sub>](node.md)
-- [Laboratorium <sub>Model View Controller</sub>](nodeMVC.md)
-- [Laboratorium <sub>REST service</sub>](noderest.md)
+- [Laboratorium <sub>Model View Controller</sub>](expressMVC.md)
+- [Laboratorium <sub>REST service</sub>](expressREST.md)
 
 [Pytania zaliczeniowe](pytania.md)
 
