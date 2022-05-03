@@ -88,5 +88,9 @@ npm install body-parser
  
 
 <img src="https://user-images.githubusercontent.com/37069490/166433438-af9fc029-c02d-4fb0-bdfb-287a357d89f4.png"/>
-
 </details>
+
+### 4. Utwórz plik `config.json` i zapisz w nim dane dostępowe do bazy danych itp..
+ <details>
+<img src="https://user-images.githubusercontent.com/37069490/166440247-488c1f7b-d3eb-47db-b7d6-f05c3fe17fe3.png" alt="img"/>
+ </details
