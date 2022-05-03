@@ -385,7 +385,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 
 ### 11. Utworzenie widoków.
 
-1. Szablon strony.
+1 Szablon strony.
 
 ```handlebars
 <!doctype html>
@@ -416,7 +416,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 </html>
 ```
 
-2. Utworzenie navigacji.
+2 Utworzenie navigacji.
 
 ```handlebars
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
@@ -443,7 +443,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 </nav>
 ```
 
-3. Utworzenie stopki strony.
+3 Utworzenie stopki strony.
 
 ```handlebars
 <footer class="footer border-top fixed-bottom">
@@ -461,7 +461,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 </footer>
 ```
 
-4. 
+4 
 <details>
  
 <img src="https://user-images.githubusercontent.com/37069490/166461276-62c8f1d9-4c9c-4ea5-a858-035a2ce591a4.png" alt="..."/>
