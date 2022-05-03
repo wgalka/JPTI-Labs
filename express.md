@@ -172,7 +172,7 @@ Folder `layouts` zawiera szablon główny.
 ```
 ### Utworzenie domyślnego szablonu
 Utwórz plik `main.hbs` w `views\layouts` z następującą zawartością:
-```hbs
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -182,7 +182,7 @@ Utwórz plik `main.hbs` w `views\layouts` z następującą zawartością:
     <title>Main view</title>
 </head>
 <body>
-    <code>{{{body}}}<code>
+   {{{body}}}
 </body>
 </html>
 ```
