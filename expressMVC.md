@@ -386,6 +386,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 ### 11. Utworzenie widoków.
 
 1. Szablon strony.
+
 ```handlebars
 <!doctype html>
 <html lang="en">
@@ -416,6 +417,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 ```
 
 2. Utworzenie navigacji.
+
 ```handlebars
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
     <div class="container">
@@ -442,6 +444,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 ```
 
 3. Utworzenie stopki strony.
+
 ```handlebars
 <footer class="footer border-top fixed-bottom">
       <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
