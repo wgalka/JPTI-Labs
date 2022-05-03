@@ -191,6 +191,12 @@ Należy utworzyć plik `index.js` lub inny wskazany w pliku `package.json` w pol
 </details>
 
 ### 7. Utworznie pliku z routingiem i konfiguracja serwera.
+<details>
+<p>
+Należy utworzyć plik `routes.js` w folderze `routes`.
+ 
+Dzięki `app.use('/', require('./routes/routes'));` w pliku `index.js` serwer będzie wiedział gdzie szukać pliku z trasowaniem.
+ 
 ```javascript
 const express = require('express');
 const userController = require('../controllers/userController');
@@ -221,12 +227,11 @@ router.delete('/delete/:id', userController.delete)
 
 module.exports = router;
 ```
-<details>
-<p>
-Należy utworzyć plik `routes.js` w folderze `routes`.
- 
-Dzięki `app.use('/', require('./routes/routes'));` w pliku `index.js` serwer będzie wiedział gdzie szukać pliku z trasowaniem.
  
 <img src="https://user-images.githubusercontent.com/37069490/166449422-711d6a68-b60a-4ca0-b516-51ec86507a21.png" alt="..."/>
 </p>
 </details>
+
+### 8. Dodanie plików statycznych których zamierzamy używać w aplikacji
+<details>
+ </details
