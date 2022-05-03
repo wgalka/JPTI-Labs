@@ -53,3 +53,27 @@ Po wpisaniu komendy w konsoli należy uzupełnić podstawowe informacje na temat
 <img src="https://user-images.githubusercontent.com/37069490/166431404-8e2b141b-9d54-4236-87cc-9c583e0326a9.png" alt="img"/>
 </details>
 
+### 3. Zainstaluj niezbędne pakiety.
+```
+npm install express
+```
+```
+npm install express-handlebars
+```
+```
+npm install express-session
+```
+```
+npm install mongoose
+```
+```
+npm install nodemon
+```
+```
+npm install body-parser
+```
+<details>
+ 
+<img src="https://user-images.githubusercontent.com/37069490/166433438-af9fc029-c02d-4fb0-bdfb-287a357d89f4.png"/>
+
+</details>
