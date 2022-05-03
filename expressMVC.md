@@ -104,8 +104,6 @@ npm install body-parser
  - Routing
 
  <details>
-
-
 📂controllers - Folder przechowujący skrypty odpowiedzialne za logikę aplikacji.
 
 📂models - Folder na klasy modelowe np. stworzone w bibliotece 'mongoose'
@@ -121,16 +119,15 @@ npm install body-parser
 📂views - Folder na szablony np. biblioteki 'express-handlebars' wraz z podfolderami:
  ┣ 📂layouts - Folder na szablony zawierajace układ strony
  ┗ 📂partials - Folder na elementy strony np. pasek nawigacji
-
  
 <img src="https://user-images.githubusercontent.com/37069490/166444177-f02a241e-da53-4041-ae23-9b5e6e39d5a2.png" alt ="img"/>
 </details>
 
 ### 6. Utworzenie skryptu uruchamiającego serwer oraz konfiguracja frameworków.
-
 <details>
 Należy utworzyć plik `index.js` lub inny wskazany w pliku `package.json` w polu "main". Zawartość pliku:
-```Javascript
+
+```javascript
 // Import konfiguracji z pliku config.json. Plik powinien automatycznie sparsować się na obiekt JS
 const config = require('./config.json');
 
@@ -192,4 +189,40 @@ app.listen(PORT, console.log(`Server uruchomiony na porcie: ${PORT}`))
 ```
 </p>
 <img src="https://user-images.githubusercontent.com/37069490/166448293-6db05d2d-92be-4e72-863c-babf736b8e8b.png" alt="..."/>
+</details
+
+### 7. Utworznie pliku z routingiem i konfiguracja serwera.
+<details>
+ 
+```javascript
+const express = require('express');
+const userController = require('../controllers/userController');
+const router = express.Router();
+
+// Import pakietu 'body-parser'. Kiedyś pakiet był częścią frameworku https://www.npmjs.com/package/body-parser
+var bodyParser = require('body-parser')
+// application/json parser - będziemy używać do przetwarzania JSON
+var jsonParser = bodyParser.json()
+// application/x-www-form-urlencoded parser - będziemy używać do przetwarzania danych z formularzy HTML
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
+
+router.get('/', function (req, res) {
+    res.render('index')
+});
+
+// Zwrócenie widoku (gdy otrzymamy żądanie HTTP metodą GET)
+router.get('/register', userController.registerView);
+// Obsługa formularza (gdy otrzymamy żądanie HTTP metodą POST)
+router.post('/register', urlencodedParser, userController.registerUser);
+
+router.get('/users', userController.usersView)
+
+router.get('/login', userController.loginView);
+router.post('/login',urlencodedParser, userController.login);
+
+router.delete('/delete/:id', userController.delete)
+
+module.exports = router;
+```
+<img src="https://user-images.githubusercontent.com/37069490/166449422-711d6a68-b60a-4ca0-b516-51ec86507a21.png" alt="..."/>
 </details
