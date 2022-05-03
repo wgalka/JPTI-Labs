@@ -129,10 +129,66 @@ npm install body-parser
 ### 6. Utworzenie skryptu uruchamiającego serwer oraz konfiguracja frameworków.
 
 <details>
+Należy utworzyć plik `index.js` lub inny wskazany w pliku `package.json` w polu "main". Zawartość pliku:
+```Javascript
+// Import konfiguracji z pliku config.json. Plik powinien automatycznie sparsować się na obiekt JS
+const config = require('./config.json');
 
-`coee`
-```html
-npm run
+// Import frameworku 'express'
+const express = require('express');
+const app = express();
+const PORT = config.PORT;
+
+// Import biblioteki do obsługi sesji
+const session = require('express-session');
+app.use(session({
+    secret: 'secret',
+    saveUninitialized: true,
+    resave: true
+}));
+
+// Import biblioteki mongoose oraz konfiguracja
+const mongoose = require('mongoose');
+mongoose.connect(config.Mongo_URL, { useUnifiedTopology: true, useNewUrlParser: true })
+    .then(() => console.log(`Połączono z bazą danych : ${config.Mongo_URL}`))
+    .catch(err => console.log(`Błąd połączenia. Sprawdź czy serwer działa poprawnie oraz link do bazy jest prawidłowy. ${config.Mongo_URL}`));
+
+// Pokazujemy frameworkowi express gdzie znajduje się plik z routingiem (metody obsługujące żądania)
+app.use('/', require('./routes/routes'));
+
+//  Import silnika szablonów 'express-handlebars' i jego konfiguracja.
+const handlebars = require('express-handlebars')
+app.engine('hbs', handlebars.engine({
+    // Szablon główny. W szablonie występuje znacnzik {{{body}}} - do tego znacnzika będzie 'wklejana' zawartość innych szablonów 
+    defaultLayout: 'main',
+    // Zdefiniowanie rozszerzenia plików szablonów. Najszęściej .hbs lub .handlebars
+    extname: '.hbs'
+}));
+app.set('view engine', 'hbs');
+
+// Pokazanie frameworkowi express gdzie znajdują się pliki statyczne (css, zdjęcia na stronie głównej itp.)
+app.use(express.static('public'))
+
+// Metoda use jest wykonywana jeśli żadne z zaprogramowanych żądań nie pasuje
+app.use((req, res) => {
+    // Ustawienie typu wiadomości zdefiniowany w nagłówku HTTP
+    res.type('text/plain')
+    // Ustawienie statusu odpowiedzi HTTP
+    res.status(404)
+    // Ustawienie Treści wiadomości HTTP
+    res.send('404 - Not Found')
+})
+
+// Metoda która jest wywołana gdy wystąpi błąd serwera
+app.use((err, req, res, next) => {
+    console.error(err.message)
+    res.type('text/plain')
+    res.status(500)
+    res.send(`500 - Server Error`)
+})
+
+// Wywołanie słuchacza żądań HTTP
+app.listen(PORT, console.log(`Server uruchomiony na porcie: ${PORT}`))
 ```
 </p>
 <img src="https://user-images.githubusercontent.com/37069490/166448293-6db05d2d-92be-4e72-863c-babf736b8e8b.png" alt="..."/>
