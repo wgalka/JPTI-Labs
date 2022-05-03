@@ -94,3 +94,14 @@ npm install body-parser
  <details>
 <img src="https://user-images.githubusercontent.com/37069490/166440247-488c1f7b-d3eb-47db-b7d6-f05c3fe17fe3.png" alt="img"/>
  </details
+
+### 5. Utwórz foldery przechowujące:
+ - Modele
+ - Widoki
+ - Kontrolery
+ - Pliki statyczne
+ - Routing
+
+ <details>
+ 
+ </details>
