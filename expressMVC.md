@@ -592,3 +592,22 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 <img src="https://user-images.githubusercontent.com/37069490/166461276-62c8f1d9-4c9c-4ea5-a858-035a2ce591a4.png" alt="..."/>
  
 </details>
+
+***
+1. Utwórz model reprezentujący post użytkownika.
+    - autor postu (id użytkownika)
+    - treść postu
+    - data wpisu
+    - temat
+    - komentarze
+2. Utwórz routing umożliwiający operacje CRUD dla postów.
+    - użytkownik zalogowny może dodać post
+    - użytkownik zalogowany może napisać komentarz
+    - użytkonik będący autorem posta może go usunąć
+    - użytkownik zalogowany może komentować post
+    - użytkownik niezalogowany może przeglądać posty
+3. Utwórz odpowiednie widoki
+    - Formularz edycji/tworzenia posta
+    - Widok postu i jego komentarzy
+    - Widok wyświetlający wszystkie posty w uproszcozny sposób np. same teamty
+4. Utwórz kontrolery odpowiedzialny za komunikację pomiędzy użytkownikiem a serwerem w zakresie operacji CRUD i wyświetlania postów. Kontroler powinien sprawdzać poprawność danych przed zapisaniem ich do bazy oraz czy użytkownicy podiadają wymagane uprawnienia.
