@@ -189,7 +189,7 @@ app.listen(PORT, console.log(`Server uruchomiony na porcie: ${PORT}`))
 ```
 </p>
 <img src="https://user-images.githubusercontent.com/37069490/166448293-6db05d2d-92be-4e72-863c-babf736b8e8b.png" alt="..."/>
-</details
+</details>
 
 ### 7. Utworznie pliku z routingiem i konfiguracja serwera.
 <details>
