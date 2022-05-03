@@ -253,4 +253,41 @@ W pobranym archiwum należy odnaleźć folder `font` i wypakować jego zawartoś
  
 <img src="https://user-images.githubusercontent.com/37069490/166453811-e2c23ba2-d45e-4e2f-aa07-f011b03d91ee.png" alt="..."/>
  
-</details
+<img src="https://user-images.githubusercontent.com/37069490/166454828-91bcc555-aed2-4e44-987f-e4c6211e51c0.png" alt="..."/>
+
+</details>
+
+### 9. Utworzenie klas Modelowych.
+```Javascript
+// Importowanie biblioteki 'mongoose'
+const mongoose = require("mongoose");
+// Utworzenie schematu danych. Informacje na temat tworzenia znajdziesz w dokumentacji https://mongoosejs.com/docs/guide.html
+const UserSchema = new mongoose.Schema({
+  // JSON będzie zawierał pole login. 
+  login: {
+    //   Wartość pola login powinna być typu String
+    type: String,
+    // Login jest wymagany. Jeśli będziemy próbować zapisać obiekt do bazy danych bez loginu powinien wystąpić wyjątek.
+    required: true,
+    // Login też powinien być unikatowy. Przy próbie zapisania tego samego loginu powinien pojawić się wyjątek.
+    unique: true
+  },
+  password: {
+    type: String,
+    required: true
+  },
+  date: {
+    type: Date,
+    default: Date.now
+  }
+});
+// Dokumenty na podstawie schematu będą zapisywane w kolekcji "User"(1 parametr funkcji)
+const User = mongoose.model("User", UserSchema);
+// export powoduje że importtując plik User.js w innych plikach JavaScript obiekt User będzie widoczny.
+module.exports = User;
+```
+<details>
+
+Należy utworzyć plik `User.js` w katalogu `models`. Model tworzymy na podstawie dokumentacji: https://mongoosejs.com/docs/guide.html
+
+</details>
