@@ -182,9 +182,12 @@ app.use((err, req, res, next) => {
 app.listen(PORT, console.log(`Server uruchomiony na porcie: ${PORT}`))
 ```
 <details>
+<p>
+ 
 Należy utworzyć plik `index.js` lub inny wskazany w pliku `package.json` w polu "main". Przykładowa zawartość pliku znajduje się powyżej.
 
 <img src="https://user-images.githubusercontent.com/37069490/166448293-6db05d2d-92be-4e72-863c-babf736b8e8b.png" alt="..."/>
+</p>
 </details>
 
 ### 7. Utworznie pliku z routingiem i konfiguracja serwera.
