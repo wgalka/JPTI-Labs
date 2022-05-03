@@ -74,17 +74,17 @@ npm install body-parser
 ```
 <details>
 
-[`express`](https://expressjs.com/)
+[`express`](https://expressjs.com/) - framework do tworzenia aplikacji internetowych oraz REST API w Node.js
  
-[`express-handlebars`](https://handlebarsjs.com/guide/#what-is-handlebars)
+[`express-handlebars`](https://handlebarsjs.com/guide/#what-is-handlebars) - silnik szablonów ułatwiający dunamiczne generowanie treści dla użytkownika aplikacji.
  
-[`express-session`](http://expressjs.com/en/resources/middleware/session.html)
+[`express-session`](http://expressjs.com/en/resources/middleware/session.html) - warstwa pośrednicząca umożliwia nadzorowanie w frameworku express stanu sesji połączonego użytkownika.
 
-[`body-parser`](http://expressjs.com/en/resources/middleware/body-parser.html)
+[`body-parser`](http://expressjs.com/en/resources/middleware/body-parser.html) - warstwa pośrednicząca umożliwia odczytanie wiadomości przesyłanej przez protokół HTTP metodą POST.
 
-[`mongoose`](https://mongoosejs.com/)
+[`mongoose`](https://mongoosejs.com/) - bliblioteka ułatwiająca pracę z bazą danych MongoDB. Ułatwia połączenie z bazą danych, wymianę informacji wraz z nadzorem poprawności (klasy modelowe).
  
-[`nodemon`](https://nodemon.io/)
+[`nodemon`](https://nodemon.io/) - Blibloteka ułatwiająca tworzenie aplikacji. Restartuje serwer aplikacji przy zapisaniu pliku.
  
 
 <img src="https://user-images.githubusercontent.com/37069490/166433438-af9fc029-c02d-4fb0-bdfb-287a357d89f4.png"/>
