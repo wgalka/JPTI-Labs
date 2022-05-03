@@ -461,7 +461,132 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 </footer>
 ```
 
-4 
+4 Utworzenie widoku strony głównej
+
+```handlebars
+<main class="container">
+    <h1>Hello world!</h1>
+</main>
+```
+
+5 Utworzenie widoku logowania
+
+```handlebars
+<div class="container mt-2">
+    <div class="col-md-4 offset-md-4">
+        {{!-- Routing do funkcji obsługującej logowanie --}}
+        <form action="/login" method="POST">
+            <div class="mb-3 needs-validation">
+                <label for="exampleInputLogin1" class="form-label">Login</label>
+                                                    {{!-- Jeśli jest błąd dodajemy klasę in-valid --}}
+                <input type="text" class="form-control {{#if error}}is-invalid{{/if}}" name="login" id="exampleInputLogin1"
+                    required>
+                {{!-- Jeśli do szablonu przekażemy zmienną error silnik wyrenderuje komunikat z błędem --}}
+                {{#if error}}
+                <div class="invalid-feedback">
+                    {{error}}
+                </div>
+                {{/if}}
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control is-valid" name="password" id="exampleInputPassword1"
+                    required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>
+```
+
+6 Utworzenie widoku rejestracji
+
+```handlebars
+<div class="container mt-2">
+    <div class="col-md-4 offset-md-4">
+        {{!-- Routing do funkcji obsługującej rejestracje --}}
+        <form action="/register" method="POST">
+            <div class="mb-3 needs-validation">
+                <label for="exampleInputLogin1" class="form-label">Login</label>
+                                                    {{!-- Jeśli jest błąd dodajemy klasę in-valid --}}
+                <input type="text" class="form-control {{#if error}}is-invalid{{/if}}" name="login" id="exampleInputLogin1"
+                    required>
+                {{#if error}}
+                <div class="invalid-feedback">
+                    {{error}}
+                </div>
+                {{/if}}
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control is-valid" name="password" id="exampleInputPassword1"
+                    required>
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+        </form>
+    </div>
+</div>
+```
+
+7 Utworzenie widoku wyświetlającego użytkowników
+
+```handlebars
+<main class="container">
+    {{!-- Warunek if data zawiera jakieś dane --}}
+    {{#if data}}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Login</th>
+                <th scope="col">Password</th>
+                {{!-- Jeśli zalogowany --}}
+                {{#if islogged}}
+                <th scope="col">Action</th>
+                {{/if}}
+            </tr>
+        </thead>
+        <tbody>
+            {{!-- Pętla iterująca po obiektach w tablicy data (obiekty klasy User) --}}
+            {{#each data as |user|}}
+            <tr>
+                {{!-- 'this' wskazuje na obiekt w obecnej iteracji --}}
+                <td>{{this.login}}</td>
+                <td>{{this.password}}</td>
+                {{!-- ../ literał służy do przechodzenia o kontekst wyżej(wyjście z pętli i dostęp do zmiennej islogged) --}}
+                {{#if ../islogged}}
+                <td><button onclick="removeUser()" id="{{this._id}}" class="btn btn-danger">Delete</a></td>
+                {{/if}}
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    {{else}}
+    <h1>No registered users</h1>
+    <a href="/register">Register first user.</a>
+    {{/if}}
+
+    {{!-- Skrypt wysyłający HTTP request metodą delete po wciśniećiu przycisku --}}
+    <script>
+        function removeUser(){
+            // https://developer.mozilla.org/pl/docs/Web/API/Event
+            console.log(event.currentTarget.id)
+            let xhr = new XMLHttpRequest()
+            // Routing który usuwa użytkowników
+            const url=`/delete/${event.currentTarget.id}`;
+            // Wysłanie żądania metodą 'DELETE'
+            xhr.open("DELETE", url);
+            // Obsługa zdarzenia po otrzymaniu odpowiedzi serwera
+            xhr.onload = function(){
+                console.log(xhr.status)
+                // Odświeżenie strony
+                window.location.reload();
+            }
+            xhr.send();
+        }
+    </script>
+</main>
+```
+
 <details>
  
 <img src="https://user-images.githubusercontent.com/37069490/166461276-62c8f1d9-4c9c-4ea5-a858-035a2ce591a4.png" alt="..."/>
