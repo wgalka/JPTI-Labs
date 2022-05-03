@@ -72,6 +72,7 @@ npm install nodemon
 ```
 npm install body-parser
 ```
+
 <details>
 
 [`express`](https://expressjs.com/) - framework do tworzenia aplikacji internetowych oraz REST API w Node.js
@@ -103,26 +104,24 @@ npm install body-parser
  - Routing
 
  <details>
- ```
- 📂controllers - Folder przechowujący skrypty odpowiedzialne za logikę aplikacji.
- ```
- ```
- 📂models - Folder na klasy modelowe np. stworzone w bibliotece 'mongoose'
-```
- ```
- 📂public - Folder na pliki statyczne
-  ┣ 📂css
-  ┣ 📂font
-  ┣ 📂js
-  ┗ 📂img
- ```
- ```
- 📂routes - Folder na skrypty odpowiedzialne za trasowanie żądań HTTP (przekazywanie żądań do odpowiedniego kontrolera)
- ```
- ```
- 📂views - Folder na szablony np. biblioteki 'express-handlebars'
-  ┣ 📂layouts - Folder na szablony zawierajace układ strony
-  ┗ 📂partials - Folder na elementy strony np. pasek nawigacji
-```
- <img src="https://user-images.githubusercontent.com/37069490/166444177-f02a241e-da53-4041-ae23-9b5e6e39d5a2.png" alt ="img"/>
- </details>
+
+
+📂controllers - Folder przechowujący skrypty odpowiedzialne za logikę aplikacji.
+
+📂models - Folder na klasy modelowe np. stworzone w bibliotece 'mongoose'
+
+📂public - Folder na pliki statyczne zawierający podpoldery:
+ ┣ 📂css
+ ┣ 📂font
+ ┣ 📂js
+ ┗ 📂img
+
+📂routes - Folder na skrypty odpowiedzialne za trasowanie żądań HTTP (przekazywanie żądań do odpowiedniego kontrolera)
+
+📂views - Folder na szablony np. biblioteki 'express-handlebars' wraz z podfolderami:
+ ┣ 📂layouts - Folder na szablony zawierajace układ strony
+ ┗ 📂partials - Folder na elementy strony np. pasek nawigacji
+
+ 
+<img src="https://user-images.githubusercontent.com/37069490/166444177-f02a241e-da53-4041-ae23-9b5e6e39d5a2.png" alt ="img"/>
+</details>
