@@ -72,9 +72,6 @@ npm install nodemon
 ```
 npm install body-parser
 ```
-
-<details>
-
 [`express`](https://expressjs.com/) - framework do tworzenia aplikacji internetowych oraz REST API w Node.js
  
 [`express-handlebars`](https://handlebarsjs.com/guide/#what-is-handlebars) - silnik szablonów ułatwiający dunamiczne generowanie treści dla użytkownika aplikacji.
@@ -87,7 +84,7 @@ npm install body-parser
  
 [`nodemon`](https://nodemon.io/) - Blibloteka ułatwiająca tworzenie aplikacji. Restartuje serwer aplikacji przy zapisaniu pliku.
  
-
+<details>
 <img src="https://user-images.githubusercontent.com/37069490/166433438-af9fc029-c02d-4fb0-bdfb-287a357d89f4.png"/>
 </details>
 
@@ -124,9 +121,6 @@ npm install body-parser
 </details>
 
 ### 6. Utworzenie skryptu uruchamiającego serwer oraz konfiguracja frameworków.
-<details>
-Należy utworzyć plik `index.js` lub inny wskazany w pliku `package.json` w polu "main". Zawartość pliku:
-
 ```javascript
 // Import konfiguracji z pliku config.json. Plik powinien automatycznie sparsować się na obiekt JS
 const config = require('./config.json');
@@ -187,13 +181,13 @@ app.use((err, req, res, next) => {
 // Wywołanie słuchacza żądań HTTP
 app.listen(PORT, console.log(`Server uruchomiony na porcie: ${PORT}`))
 ```
-</p>
+<details>
+Należy utworzyć plik `index.js` lub inny wskazany w pliku `package.json` w polu "main". Przykładowa zawartość pliku znajduje się powyżej.
+
 <img src="https://user-images.githubusercontent.com/37069490/166448293-6db05d2d-92be-4e72-863c-babf736b8e8b.png" alt="..."/>
 </details>
 
 ### 7. Utworznie pliku z routingiem i konfiguracja serwera.
-<details>
- 
 ```javascript
 const express = require('express');
 const userController = require('../controllers/userController');
@@ -224,5 +218,12 @@ router.delete('/delete/:id', userController.delete)
 
 module.exports = router;
 ```
+<details>
+<p>
+Należy utworzyć plik `routes.js` w folderze `routes`.
+ 
+Dzięki `app.use('/', require('./routes/routes'));` w pliku `index.js` serwer będzie wiedział gdzie szukać pliku z trasowaniem.
+ 
 <img src="https://user-images.githubusercontent.com/37069490/166449422-711d6a68-b60a-4ca0-b516-51ec86507a21.png" alt="..."/>
+</p>
 </details>
