@@ -291,3 +291,172 @@ module.exports = User;
 Należy utworzyć plik `User.js` w katalogu `models`. Model tworzymy na podstawie dokumentacji: https://mongoosejs.com/docs/guide.html
 
 </details>
+
+### 10. Utworzenie kontrolera.
+```javascript
+const User = require("../models/User");
+
+// Utworzenie klasy kontrolera
+class UserController {
+    constructor() { }
+
+    // Funkcje statyczne będą dostępne bez tworzenia obiektu i takie same pomiędzy obiektami.
+    static registerView = (req, res) => {
+        res.render("register");
+    }
+
+    static loginView = (req, res) => {
+        res.render("login");
+    }
+
+    static async registerUser(req, res) {
+        // Odczytanie danych z formularza i utworzenie obiektu na podstawie modelu User.js
+        let data = req.body
+        console.log(`Dane odczytane z formularza: ${JSON.stringify(data)}`)
+        // Tworzymy obiekt na podstawie naszego modelu. Jeśli jest prosty framework odszuka po kluczach odpowiednie pola.
+        let user = new User(data);
+        console.log(`Utworzony obiekt: ${JSON.stringify(user)}`)
+        // Zapisanie obiektu w bazie danych.
+        try {
+            // Funkcja save() jest asynchroniczna - zwraca obietnicę że się wykona. Jeśli chcemy poczekać aż wykona się do końca należy użyć instrukcji await
+            await user.save()
+        } catch (err) {
+            //  Jeśli komunikat błędu zaczyna się od "E11000 duplicate key error"
+            if (err.message.startsWith("E11000 duplicate key error")) {
+                // wyrenderuj widok register i przekaż komunikat błędu do szablonu
+                res.render('register', { error: "Login is taken" });
+                return
+            } else {
+                console.log("Błąd zapisu użytkownika: " + err.message)
+            }
+        }
+        // Przekierowanie użytkownika do 'jakiejś trasy' np. wyświetlającej użytkowników
+        res.redirect('/');
+    }
+
+    static async usersView(req, res) {
+        // Pobranie z bazy Kolekcji Użytkowników
+        let data = await User.find().lean()
+        // Przekazanie danych do widoku
+        console.log("Czy zalogowano:" + req.session.loggedin)
+        res.render('usersTable', { data: data, islogged: req.session.loggedin })
+    }
+
+    static async login(req, res) {
+        let data = req.body
+        console.log(data)
+        let user = await User.find({ login: data.login }).lean()
+        console.log(user)
+        // Jeśli znaleziono jednego użytkownika o tym lognie
+        if (user.length == 1) {
+            // Ustawienie zmiennych sesyjnych
+            req.session.loggedin = true;
+            req.session.login = user.login;
+            res.redirect('/users')
+            // W przeciwnym wypadku przenosimy użytkownika do rejestracji
+        } else {
+            res.redirect('/register')
+        }
+    }
+
+    static async delete(req, res) {
+        console.log(req.session.loggedin)
+        if (req.session.loggedin) {
+            // Odczyt named parameter
+            let id = req.params.id
+            // Usunięcie użytkownika o danym id (https://mongoosejs.com/docs/api/model.html)
+            await User.deleteOne({ _id: id })
+            res.redirect('/users')
+        } else {
+            // res.redirect('/login')
+        }
+    }
+}
+
+module.exports = UserController;
+```
+<details>
+
+Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontrollera powinna zawierać funkcje obsługujące odpowiednie trasy zdefiniowane w aplikacji.
+
+<img src="https://user-images.githubusercontent.com/37069490/166460948-bd5ac62e-e4c5-41c3-82bd-cfcfa49d75b3.png" alt="..."/>
+ 
+</details>
+
+### 11. Utworzenie widoków.
+1. Szablon strony.
+```handlebars
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link href="/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>MVC - Example</title>
+  </head>
+  <body>
+    <!-- W ten sposób importujemy szablony z folderu views/partials. Poniżej został importowany plik navbar.hbs -->
+    {{>navbar}}
+    <!-- W miejsce 'body' będą wstawiane treści np. z pliku views/index.hbs -->
+    {{{body}}}
+    {{>footer}}
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
+```
+2. Utworzenie navigacji.
+```handlebars
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="#">MVC-Example</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/users">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+```
+3. Utworzenie stopki strony.
+```handlebars
+<footer class="footer border-top fixed-bottom">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="text-muted">© 2021 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="https://www.twitter.com/"><i class=" bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/"><i class=" bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/"><i class=" bi-facebook"></i></a></li>
+        </ul>
+      </div>
+</footer>
+```
+4. 
+<details>
+ 
+<img src="https://user-images.githubusercontent.com/37069490/166461276-62c8f1d9-4c9c-4ea5-a858-035a2ce591a4.png" alt="..."/>
+ 
+</details>
