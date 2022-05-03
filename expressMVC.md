@@ -92,9 +92,9 @@ npm install body-parser
 </details>
 
 ### 4. Utwórz plik `config.json` i zapisz w nim dane dostępowe do bazy danych itp..
- <details>
+<details>
 <img src="https://user-images.githubusercontent.com/37069490/166440247-488c1f7b-d3eb-47db-b7d6-f05c3fe17fe3.png" alt="img"/>
- </details
+</details>
 
 ### 5. Utwórz foldery przechowujące:
  - Modele
@@ -225,4 +225,4 @@ router.delete('/delete/:id', userController.delete)
 module.exports = router;
 ```
 <img src="https://user-images.githubusercontent.com/37069490/166449422-711d6a68-b60a-4ca0-b516-51ec86507a21.png" alt="..."/>
-</details
+</details>
