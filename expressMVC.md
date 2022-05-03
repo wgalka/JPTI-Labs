@@ -125,3 +125,15 @@ npm install body-parser
  
 <img src="https://user-images.githubusercontent.com/37069490/166444177-f02a241e-da53-4041-ae23-9b5e6e39d5a2.png" alt ="img"/>
 </details>
+
+### 6. Utworzenie skryptu uruchamiającego serwer oraz konfiguracja frameworków.
+
+<details>
+
+`coee`
+```html
+npm run
+```
+</p>
+<img src="https://user-images.githubusercontent.com/37069490/166448293-6db05d2d-92be-4e72-863c-babf736b8e8b.png" alt="..."/>
+</details
