@@ -46,11 +46,13 @@ nodemon
 ```
 npm init
 ```
+
 <details>
 
 Po wpisaniu komendy w konsoli należy uzupełnić podstawowe informacje na temat aplikacji (opis, autor itp.). Przejście konfiguracji utworzy plik `package.json` w folderze aplikacji.
 
 <img src="https://user-images.githubusercontent.com/37069490/166431404-8e2b141b-9d54-4236-87cc-9c583e0326a9.png" alt="img"/>
+
 </details>
 
 ### 3. Zainstaluj niezbędne pakiety.
@@ -89,8 +91,11 @@ npm install body-parser
 </details>
 
 ### 4. Utwórz plik `config.json` i zapisz w nim dane dostępowe do bazy danych itp..
+
 <details>
+ 
 <img src="https://user-images.githubusercontent.com/37069490/166440247-488c1f7b-d3eb-47db-b7d6-f05c3fe17fe3.png" alt="img"/>
+
 </details>
 
 ### 5. Utwórz foldery przechowujące:
@@ -101,6 +106,7 @@ npm install body-parser
  - Routing
 
  <details>
+ 
 📂controllers - Folder przechowujący skrypty odpowiedzialne za logikę aplikacji.
 
 📂models - Folder na klasy modelowe np. stworzone w bibliotece 'mongoose'
@@ -118,6 +124,7 @@ npm install body-parser
  ┗ 📂partials - Folder na elementy strony np. pasek nawigacji
  
 <img src="https://user-images.githubusercontent.com/37069490/166444177-f02a241e-da53-4041-ae23-9b5e6e39d5a2.png" alt ="img"/>
+
 </details>
 
 ### 6. Utworzenie skryptu uruchamiającego serwer oraz konfiguracja frameworków.
@@ -182,12 +189,11 @@ app.use((err, req, res, next) => {
 app.listen(PORT, console.log(`Server uruchomiony na porcie: ${PORT}`))
 ```
 <details>
-<p>
  
 Należy utworzyć plik `index.js` lub inny wskazany w pliku `package.json` w polu "main". Przykładowa zawartość pliku znajduje się powyżej.
 
 <img src="https://user-images.githubusercontent.com/37069490/166448293-6db05d2d-92be-4e72-863c-babf736b8e8b.png" alt="..."/>
-</p>
+
 </details>
 
 ### 7. Utworznie pliku z routingiem i konfiguracja serwera.
@@ -222,17 +228,19 @@ router.delete('/delete/:id', userController.delete)
 module.exports = router;
 ```
 <details>
-<p>
+
 Należy utworzyć plik `routes.js` w folderze `routes`.
  
 Dzięki `app.use('/', require('./routes/routes'));` w pliku `index.js` serwer będzie wiedział gdzie szukać pliku z trasowaniem.
  
 <img src="https://user-images.githubusercontent.com/37069490/166449422-711d6a68-b60a-4ca0-b516-51ec86507a21.png" alt="..."/>
-</p>
+ 
 </details>
 
 ### 8. Dodanie plików statycznych których zamierzamy używać w aplikacji
+
 <details>
+
 Należy pobrać bootstrap z linku - https://github.com/twbs/bootstrap/releases/download/v5.1.3/bootstrap-5.1.3-dist.zip
  
 W pobranym archiwum znajdują się dwa foldery `css` oraz `js`. Należy je wypakować do katalogu `public` projektu.
@@ -244,6 +252,5 @@ Oraz ikony bootstrap - https://github.com/twbs/icons/archive/v1.8.1.zip
 W pobranym archiwum należy odnaleźć folder `font` i wypakować jego zawartość do katalogu `font` w projekcie.
  
 <img src="https://user-images.githubusercontent.com/37069490/166453811-e2c23ba2-d45e-4e2f-aa07-f011b03d91ee.png" alt="..."/>
-
-
+ 
 </details
