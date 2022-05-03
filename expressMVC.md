@@ -34,6 +34,7 @@ nodemon
 `nodemon` w pliku `package.json` wyszuka wartość pola `"main"` i uruchomi wskazany plik.
 
 ## Tworzenie struktury aplikacji i konfiguracja
+Plugin visual studio code `Material Icon Theme` zamieni ikony folderów i plików ułatwiając ich identyfikację.
 ![image](https://user-images.githubusercontent.com/37069490/166559869-271bcff8-1bb4-452b-a30a-944ca74eeb23.png)
 
 ### 1. Utwórz folder np. `example-app`.
