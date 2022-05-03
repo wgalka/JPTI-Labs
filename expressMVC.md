@@ -36,8 +36,10 @@ nodemon
 ## Tworzenie struktury aplikacji i konfiguracja
 
 ### 1. Utwórz folder np. `example-app`.
-<details>
+<details><summary>CLICK ME</summary>
+ <p>
 ![image](https://user-images.githubusercontent.com/37069490/166429976-fa5e6130-2750-4c6a-bda5-b4ccaa6a152e.png)
+ </p>
 </details>
 
 
