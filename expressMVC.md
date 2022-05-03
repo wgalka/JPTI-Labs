@@ -191,12 +191,6 @@ Należy utworzyć plik `index.js` lub inny wskazany w pliku `package.json` w pol
 </details>
 
 ### 7. Utworznie pliku z routingiem i konfiguracja serwera.
-<details>
-<p>
-Należy utworzyć plik `routes.js` w folderze `routes`.
- 
-Dzięki `app.use('/', require('./routes/routes'));` w pliku `index.js` serwer będzie wiedział gdzie szukać pliku z trasowaniem.
- 
 ```javascript
 const express = require('express');
 const userController = require('../controllers/userController');
@@ -227,6 +221,11 @@ router.delete('/delete/:id', userController.delete)
 
 module.exports = router;
 ```
+<details>
+<p>
+Należy utworzyć plik `routes.js` w folderze `routes`.
+ 
+Dzięki `app.use('/', require('./routes/routes'));` w pliku `index.js` serwer będzie wiedział gdzie szukać pliku z trasowaniem.
  
 <img src="https://user-images.githubusercontent.com/37069490/166449422-711d6a68-b60a-4ca0-b516-51ec86507a21.png" alt="..."/>
 </p>
@@ -234,4 +233,17 @@ module.exports = router;
 
 ### 8. Dodanie plików statycznych których zamierzamy używać w aplikacji
 <details>
- </details
+Należy pobrać bootstrap z linku - https://github.com/twbs/bootstrap/releases/download/v5.1.3/bootstrap-5.1.3-dist.zip
+ 
+W pobranym archiwum znajdują się dwa foldery `css` oraz `js`. Należy je wypakować do katalogu `public` projektu.
+ 
+<img src="https://user-images.githubusercontent.com/37069490/166453452-67b17cf0-ca6f-4934-991a-fc4465b62bbd.png" alt="..."/>
+
+Oraz ikony bootstrap - https://github.com/twbs/icons/archive/v1.8.1.zip
+ 
+W pobranym archiwum należy odnaleźć folder `font` i wypakować jego zawartość do katalogu `font` w projekcie.
+ 
+<img src="https://user-images.githubusercontent.com/37069490/166453811-e2c23ba2-d45e-4e2f-aa07-f011b03d91ee.png" alt="..."/>
+
+
+</details
