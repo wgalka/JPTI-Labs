@@ -74,17 +74,17 @@ npm install body-parser
 ```
 <details>
 
-`express` - https://expressjs.com/
+[`express`](https://expressjs.com/)
  
-`express-handlebars` - https://handlebarsjs.com/guide/#what-is-handlebars
+[`express-handlebars`](https://handlebarsjs.com/guide/#what-is-handlebars)
  
-`express-session` - http://expressjs.com/en/resources/middleware/session.html
+[`express-session`](http://expressjs.com/en/resources/middleware/session.html)
 
-`body-parser` - http://expressjs.com/en/resources/middleware/body-parser.html
+[`body-parser`](http://expressjs.com/en/resources/middleware/body-parser.html)
 
-`mongoose` - https://mongoosejs.com/
+[`mongoose`](https://mongoosejs.com/)
  
-`nodemon` - https://nodemon.io/
+[`nodemon`](https://nodemon.io/)
  
 
 <img src="https://user-images.githubusercontent.com/37069490/166433438-af9fc029-c02d-4fb0-bdfb-287a357d89f4.png"/>
