@@ -1,5 +1,8 @@
 # JPTI
 
+- HTML
+- CSS
+- Javascript
 - [Laboratorium 5 <sub>Javascript</sub>](javascript.md)
 - [Laboratorium 6 <sub>JSON</sub>](json.md)
 - [Laboratorium 7 <sub>Express JS</sub>](express.md)
