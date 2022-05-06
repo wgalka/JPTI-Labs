@@ -71,9 +71,6 @@ npm install express-session
 npm install mongoose
 ```
 ```
-npm install nodemon
-```
-```
 npm install body-parser
 ```
 [`express`](https://expressjs.com/) - framework do tworzenia aplikacji internetowych oraz REST API w Node.js
