@@ -389,7 +389,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 
 ### 11. Utworzenie widoków.
 
-1 Szablon strony.
+1 Szablon strony. main.hbs
 
 ```handlebars
 <!doctype html>
@@ -420,7 +420,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 </html>
 ```
 
-2 Utworzenie navigacji.
+2 Utworzenie navigacji. navbar.hbs
 
 ```handlebars
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
@@ -447,7 +447,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 </nav>
 ```
 
-3 Utworzenie stopki strony.
+3 Utworzenie stopki strony. footer.hbs
 
 ```handlebars
 <footer class="footer border-top fixed-bottom">
@@ -465,7 +465,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 </footer>
 ```
 
-4 Utworzenie widoku strony głównej
+4 Utworzenie widoku strony głównej index.hbs
 
 ```handlebars
 <main class="container">
@@ -473,7 +473,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 </main>
 ```
 
-5 Utworzenie widoku logowania
+5 Utworzenie widoku logowania login.hbs
 
 ```handlebars
 <div class="container mt-2">
@@ -503,7 +503,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 </div>
 ```
 
-6 Utworzenie widoku rejestracji
+6 Utworzenie widoku rejestracji register.hbs
 
 ```handlebars
 <div class="container mt-2">
@@ -532,7 +532,7 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 </div>
 ```
 
-7 Utworzenie widoku wyświetlającego użytkowników
+7 Utworzenie widoku wyświetlającego użytkowników. usersTable.hbs
 
 ```handlebars
 <main class="container">
