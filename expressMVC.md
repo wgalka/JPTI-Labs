@@ -23,7 +23,7 @@ Najczęściej pliki odpowiadające za dane składowe przechowuje się w folderac
 
 Zainstaluj pakiet nodemon
 ```ComandPrompt
-npm install nodemon
+npm install -g nodemon
 ```
 
 Aby uruchomić serwer wpisz w konsoli:
