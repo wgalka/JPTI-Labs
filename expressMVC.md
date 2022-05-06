@@ -93,7 +93,12 @@ npm install body-parser
 </details>
 
 ### 4. Utwórz plik `config.json` i zapisz w nim dane dostępowe do bazy danych itp..
-
+```JSON
+{
+    "Mongo_URL": "mongodb://127.0.0.1:27017/nazwa_bazy_danych",
+    "PORT": 8080
+}
+```
 <details>
  
 <img src="https://user-images.githubusercontent.com/37069490/166440247-488c1f7b-d3eb-47db-b7d6-f05c3fe17fe3.png" alt="img"/>
@@ -594,6 +599,8 @@ Należy utworzyć plik `UserController` w folderze `controllers`. Klasa kontroll
 <img src="https://user-images.githubusercontent.com/37069490/166461276-62c8f1d9-4c9c-4ea5-a858-035a2ce591a4.png" alt="..."/>
  
 </details>
+
+Przetestować działanie aplikacji: localhost:8080
 
 ***
 1. Utwórz model reprezentujący post użytkownika.
