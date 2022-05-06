@@ -1,4 +1,5 @@
 # Model View Controller
+!Na stronie nie wszystkie kody źródłowe Silnika szablonów wyświetlane są poprawnie. Najlepiej skorzystać z pliku źródłowego https://github.com/wgalka/JPTI-Labs/edit/main/expressMVC.md
 
 Jest to wzorzec służący do organizacji struktury aplikacji. 
 Ma trzy główne składowe:
