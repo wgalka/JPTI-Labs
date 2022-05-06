@@ -320,4 +320,6 @@ let data = MyCollection.find({}).exec().then(function(result){
 7. Skonfiguruj połączenie z bazą danych i zmodyfikuj routing `/create` by zapisywał dane z formularza do bazy danych a następnie wyświetlił użytkownikowi informacje 'Pomyślnie zapisano dane'
 8. Dodaj kilka rekordów do bazy danych. Wykorzystaj nakładkę Compass by sprawdzić czy obiekty zostały poprawnie zapisane.
 9. Utwórz routing `/showusers` zwracający użytkowników z bazy danych w postaci tabeli.
-10. Zaimplementować opcję edycji wybranego rekordu w tabeli showusers.*
+10. Zaimplementować opcję edycji wybranego rekordu.*
+    - w tabeli generowanej przez routing `/showusers` dodać kolumnę z przyciskiem umożliwiającym edycję z odpowiednim przekierowaniem.
+    - utworzyć routing zwracający formularz z wczytanumi danymi i przyciskiem zapisz. Po wciśnięciu zapisz obiekt w bazie danych powinien zostać nadpisany.
