@@ -26,8 +26,10 @@
 13. Połączyć komórki tabeli w pionie.
 14. Połączyć komórki tabeli w poziomie.
 15. Połączyć komórki tabeli w pionie i poziomie.
-16. Utworzyć tabelę i za pomocą styli css sformatować ją tak by jak najbardziej przypominała szachownicę.
-17. Utworzyć formularz demonstrujący wszystkie możliwe rozaje inputów, przycisków oraz pól wyboru.
+16. Za pomocą CSS zmienić numerowanie listy z zadania 5 na cyfry rzymskie a listom wewnątrz "punktu 1" zmienić znaczniki na wypełnione kropki.
+17. Utworzyć giperłącze do dokumentu `flexbox.html`. Za pomocą CSS usunąć podkreślenie z hiperłącza i shormatować znacznik tak by przypominał prycisk który po najechaniu myszą zmienia kolor na jaśniejszy a po wciśnięciu na ciemniejszy. Dobrać odpowiednią wielkość tekstu i kolor tekstu. Zaokrąglić rogi i dodać cienie.
+18. Utworzyć tabelę i za pomocą styli css sformatować ją tak by jak najbardziej przypominała szachownicę.
+19. Utworzyć formularz demonstrujący wszystkie możliwe rozaje inputów, przycisków oraz pól wyboru.
 18*. Utworzyć plik `flexbox.html`. Korzystając z poradnika https://css-tricks.com/snippets/css/a-guide-to-flexbox/ utworzyć layout:
     - pasek nawigacji (znacznik nav)
     - stopka strony (znacnzik footer)
