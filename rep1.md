@@ -28,7 +28,7 @@
 15. Połączyć komórki tabeli w pionie i poziomie.
 16. Utworzyć tabelę i za pomocą styli css sformatować ją tak by jak najbliżej przypominała szachownicę.
 17. Utworzyć formularz demonstrujący wszystkie możliwe rozaje inputów, przycisków oraz pól wyboru.
-18*. Utworzyć plik `flexbox.html`. Korzystając z poradnika https://css-tricks.com/snippets/css/a-guide-to-flexbox/ Utworzyć layout:
+18*. Utworzyć plik `flexbox.html`. Korzystając z poradnika https://css-tricks.com/snippets/css/a-guide-to-flexbox/ utworzyć layout:
     - pasek nawigacji (znacznik nav)
     - stopka strony (znacnzik footer)
     - treśc strony z dowolnym zdjęciem znaczka(prostokątny format) powtórzonym kilka razy. W zależności od wielkości okna przeglądarki znaczki powinny zawijać się jeden pod drugim.
