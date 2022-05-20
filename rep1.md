@@ -15,6 +15,7 @@
 2 punkt2
 3 punkt3
 ```
+
 6. Utworzyć plik `style.css` a nastepnie użyć elementu łącza zasobów do utworzonego pliku w dokumencie `zadania.html`.
 7. W pliku `zadania.html` utworzyć `div` zawierający napis "pudło 1", `div` z atrybutem `id="box"` z napisem "pudło 2" oraz `div` z atrybutem `class="box"` z napisem pudło3.
 8. W pliku `style.css` zdefiniować czerwony kolor tła dla znaczników div, zielony kolor tła dla elementów z `id="box"` oraz niebieski kolor tła dla elementów z atrybutem `class="box"`.
