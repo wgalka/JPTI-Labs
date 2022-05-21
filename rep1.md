@@ -21,7 +21,7 @@
 8. W pliku `style.css` zdefiniować czerwony kolor tła dla znaczników div, zielony kolor tła dla elementów z `id="box"` oraz niebieski kolor tła dla elementów z atrybutem `class="box"`.
 9. Odszukać informacje na temat różnych jednostek wielkości w CSS i wypisać infromacje na ich temat w osobnych akapitach.
 10. Utworzyć `div` a w nim `div` z atrybutem `id="box-model"`. Zdefiniuj wysokośc i szerokość znacznika z id `box-model` na 50mm. Zdefiniuj style w ten sposób by widoczne były: ramka, margines wewnętrzny, margines zewnętrzny.
-11. Skopiować dwa razy znaczniki z poprzedniego zadania. Dla każdego zestawu przetestować właściwość css `box-sizing:` z wartościami: `content-box`, `border-box`, `padding-box`. Napisz pod każdym przykładem paragraf czym różnią się od siebie. https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+11. Skopiować dwa razy znaczniki z poprzedniego zadania. Dla każdego zestawu przetestować właściwość css `box-sizing:` z wartościami: `content-box`, `border-box`. Napisz pod każdym przykładem paragraf czym różnią się od siebie. https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 12. Utworzyć tabelę 2x2 zawierającą literę A w każdej komorce. W pliku `style.css` zdefiniować czerwone kropkowane obramowanie tabeli.
 13. Zdefiniować style dla tabeli z poprzedniego zadania w sekcji `head`. Ustawić obramowanie na niebieską linię ciągłą.
 14. Połączyć komórki tabeli w pionie.
