@@ -13,6 +13,7 @@
 - [Laboratorium <sub>REST service</sub>](expressREST.md)
 
 - [Laboratorium <sub>Zadania 1</sub>](rep1.md)
+- [Laboratorium <sub>Zadania 2</sub>](rep2.md)
 
 [Pytania zaliczeniowe](pytania.md)
 
