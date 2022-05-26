@@ -1,6 +1,20 @@
 ## HTML
 
 1. Rowziń skrót HTML.
+2. Omów budowę znacznika HTML.
+3. Minimalne wymagane znaczniki i atrybuty poprawnego dokumentu html?
+4. Wymień znane Ci znaczniki tekstowe i semantyczne wyróżniające tekst?
+5. Wymień znane Ci znaczniki semantyczne używane do tworzenia layoutu?
+
+## CSS
+
+1. Wymień trzy sposoby definiowania styli CSS w dokumencie html.
+2. Omów budowę reguł css.
+3. 
+
+## JavaScript
+
+
 
 ## JSON
 
