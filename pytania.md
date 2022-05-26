@@ -10,11 +10,15 @@
 
 1. Wymień trzy sposoby definiowania styli CSS w dokumencie html.
 2. Omów budowę reguł css.
-3. 
+3. Co to specyficity i jak jest obliczane?
+4. Opisać model pudełkowy.
+5. Potomkowie, dzieci, bliźniaki https://thecssworkshop.com/lessons/combinators
+6. Omówić wybrane właściwości css używane do tworzenia layoutów.
 
 ## JavaScript
 
-
+1. Czym jest javascript i podaj przykłady zastosowań.
+2. Wymień dwa sposoby osadzania kodu javascript w dokumentach html.
 
 ## JSON
 
