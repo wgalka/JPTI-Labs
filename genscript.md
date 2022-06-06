@@ -80,5 +80,6 @@ const id = setInterval(doRequest, 5000)
 setTimeout(function () { clearInterval(id), console.log("Function stopped after 80 seconds!") }, 80000)
 ```
 3. Po uruchomieniu skryptu poleceniem `node genData.js` do naszej aplikacji będą wysyłane żądania co 5 sekund z losową wartością temperatury.
+
 ![image](https://user-images.githubusercontent.com/37069490/172256611-be041e73-4db0-4e82-a626-46f84b723695.png)
 
