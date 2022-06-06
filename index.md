@@ -12,6 +12,8 @@
 - [Laboratorium <sub>Model View Controller</sub>](expressMVC.md)
 - [Laboratorium <sub>REST service</sub>](expressREST.md)
 
+- [Laboratorium <sub>Generowanie losowych danych dla aplikacji</sub>](genscript.md)
+
 - [Laboratorium <sub>Zadania 1</sub>](rep1.md)
 - [Laboratorium <sub>Zadania 2</sub>](rep2.md)
 
