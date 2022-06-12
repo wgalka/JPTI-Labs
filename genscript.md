@@ -3,8 +3,8 @@
 1. Dodać routing obsługijący żądanie post wysyłające dane w postaci JSON w treści żądania HTTP.
 
 ```Javascript
-// application/json parser - będziemy używać do przetwarzania JSON
-var jsonParser = bodyParser.json()
+// Import pakietu 'body-parser'. Kiedyś pakiet był częścią frameworku https://www.npmjs.com/package/body-parser
+var bodyParser = require('body-parser')
 // application/json parser - będziemy używać do przetwarzania JSON
 var jsonParser = bodyParser.json()
 
