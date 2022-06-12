@@ -5,6 +5,8 @@
 ```Javascript
 // application/json parser - będziemy używać do przetwarzania JSON
 var jsonParser = bodyParser.json()
+// application/json parser - będziemy używać do przetwarzania JSON
+var jsonParser = bodyParser.json()
 
 router.post('/save_data',jsonParser, function(req,res){
     // odczytanie ciała żądania (JSON który został wysłany z pliku ranomsensordata.js)
